@@ -18,14 +18,14 @@
       effects:
       - !type:SatiateThirst
         factor: 1.0
-        conditions:
-          - !type:OrganType
-            type: Human
-            shouldHave: false
+        # conditions: # Lonestar
+        #   - !type:OrganType
+        #     type: Human
+        #     shouldHave: false
     Food:
       effects:
         - !type:AdjustReagent
-          reagent: UncookedAnimalProteins
+          reagent: Protein # Lonestar: Protein (was UncookedAnimalProteins)
           amount: 0.01 # Frontier - 0.1<0.01
     Medicine:
       effects:
