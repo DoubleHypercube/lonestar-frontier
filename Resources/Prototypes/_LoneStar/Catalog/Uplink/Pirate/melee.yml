@@ -1,0 +1,167 @@
+- type: listing
+  id: UplinkPirateKatanaHF
+  name: uplink-security-hfblade-name
+  description: uplink-security-hfblade-desc
+  productEntity: KatanaHF
+  icon: { sprite: _Mono/Objects/Weapons/Melee/hfblade.rsi, state: icon }
+  cost:
+    Doubloon: 3 # slightly more hurting than the arming sword
+  categories:
+    - UplinkPirateMelee
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+    - !type:BuyerJobCondition
+      whitelist:
+      - NFPirate
+      - NFPirateFirstMate
+      - NFPirateCaptain
+
+- type: listing
+  id: UplinkPirateKatanaMurasama
+  name: uplink-security-murasama-name
+  description: uplink-security-murasama-desc
+  productEntity: KatanaMurasama
+  icon: { sprite: _Mono/Objects/Weapons/Melee/murasama.rsi, state: icon }
+  cost:
+    Doubloon: 3
+  categories:
+    - UplinkPirateMelee
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+    - !type:BuyerJobCondition
+      whitelist:
+      - NFPirate
+      - NFPirateFirstMate
+      - NFPirateCaptain
+
+- type: listing
+  id: UplinkPirateKatanaPhaseblade
+  name: uplink-security-phaseblade-name
+  description: uplink-security-phaseblade-desc
+  productEntity: KatanaPhaseblade
+  icon: { sprite: _Mono/Objects/Weapons/Melee/phaseblade.rsi, state: icon }
+  cost:
+    Doubloon: 3
+  categories:
+    - UplinkPirateMelee
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+    - !type:BuyerJobCondition
+      whitelist:
+      - NFPirate
+      - NFPirateFirstMate
+      - NFPirateCaptain
+
+- type: listing
+  id: UplinkPirateLizitarSapphire
+  name: uplink-security-lizitarSapphire-name
+  description: uplink-security-lizitarSapphire-desc
+  productEntity: LizitarSapphire
+  icon: { sprite: _LoneStar/Objects/Weapons/Melee/Lizitar/Sapphire.rsi, state: icon }
+  cost:
+    Doubloon: 5 # hits pretty hard, 30 damage (but it's slow - so don't miss!!)
+  categories:
+    - UplinkPirateMelee
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+    - !type:BuyerJobCondition
+      whitelist:
+      - NFPirate
+      - NFPirateFirstMate
+      - NFPirateCaptain
+
+- type: listing
+  id: UplinkPirateLizitarEmerald
+  name: uplink-security-lizitarEmerald-name
+  description: uplink-security-lizitarEmerald-desc
+  productEntity: LizitarEmerald
+  icon: { sprite: _LoneStar/Objects/Weapons/Melee/Lizitar/Emerald.rsi, state: icon }
+  cost:
+    Doubloon: 5
+  categories:
+    - UplinkPirateMelee
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+    - !type:BuyerJobCondition
+      whitelist:
+      - NFPirate
+      - NFPirateFirstMate
+      - NFPirateCaptain
+
+- type: listing
+  id: UplinkPirateLizitarAmethyst
+  name: uplink-security-lizitarAmethyst-name
+  description: uplink-security-lizitarAmethyst-desc
+  productEntity: LizitarAmethyst
+  icon: { sprite: _LoneStar/Objects/Weapons/Melee/Lizitar/Amethyst.rsi, state: icon }
+  cost:
+    Doubloon: 5
+  categories:
+    - UplinkPirateMelee
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+    - !type:BuyerJobCondition
+      whitelist:
+      - NFPirate
+      - NFPirateFirstMate
+      - NFPirateCaptain
+
+- type: listing
+  id: UplinkPirateLizitarRuby
+  name: uplink-security-lizitarRuby-name
+  description: uplink-security-lizitarRuby-desc
+  productEntity: LizitarRuby
+  icon: { sprite: _LoneStar/Objects/Weapons/Melee/Lizitar/Ruby.rsi, state: icon }
+  cost:
+    Doubloon: 5
+  categories:
+    - UplinkPirateMelee
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+    - !type:BuyerJobCondition
+      whitelist:
+      - NFPirate
+      - NFPirateFirstMate
+      - NFPirateCaptain
+
+- type: listing
+  id: UplinkPirateRatvarianSpear
+  name: uplink-security-ratvarian-spear-name
+  description: uplink-security-ratvarian-spear-desc
+  productEntity: RatvarianSpear
+  icon: { sprite: _LoneStar/Objects/Weapons/Melee/ratvarian_spear.rsi, state: icon }
+  cost:
+    Doubloon: 3 # sure, 30 damage on throw, but now THEY have it
+  categories:
+    - UplinkPirateMelee
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+    - !type:BuyerJobCondition
+      whitelist:
+      - NFPirate
+      - NFPirateFirstMate
+      - NFPirateCaptain
