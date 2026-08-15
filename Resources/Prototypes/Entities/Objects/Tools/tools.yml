@@ -318,6 +318,66 @@
     - HVCable
     - CableTerminal
     - Deconstruct
+    # Hardlight/Mono start
+    - PlatingNE
+    - PlatingNW
+    - PlatingSE
+    - PlatingSW
+    - PlatingHalfV
+    - PlatingHalfH
+    - PlatingWedgeN
+    - PlatingWedgeE
+    - PlatingWedgeS
+    - PlatingWedgeW
+    - PlatingHalfTiltNESLower
+    - PlatingHalfTiltSEWLower
+    - PlatingHalfTiltSWNLower
+    - PlatingHalfTiltNWELower
+    - PlatingHalfTiltNESUpper
+    - PlatingHalfTiltSEWUpper
+    - PlatingHalfTiltSWNUpper
+    - PlatingHalfTiltNWEUpper
+    - PlatingHalfTiltNEWLower
+    - PlatingHalfTiltSENLower
+    - PlatingHalfTiltSWELower
+    - PlatingHalfTiltNWSLower
+    - PlatingHalfTiltNEWUpper
+    - PlatingHalfTiltSENUpper
+    - PlatingHalfTiltSWEUpper
+    - PlatingHalfTiltNWSUpper
+    - WindowDirectionalShuttle
+    - WindowShuttle
+    - WallSolidDiagonal
+    - WallShuttleDiagonal
+    - WallReinforcedDiagonal
+    - Lattice
+    - LatticeCornerNE
+    - LatticeCornerNW
+    - LatticeCornerSE
+    - LatticeCornerSW
+    - LatticeHalfV
+    - LatticeHalfH
+    - LatticeWedgeN
+    - LatticeWedgeE
+    - LatticeWedgeS
+    - LatticeWedgeW
+    - LatticeHalfTiltNESLower
+    - LatticeHalfTiltSEWLower
+    - LatticeHalfTiltSWNLower
+    - LatticeHalfTiltNWELower
+    - LatticeHalfTiltNESUpper
+    - LatticeHalfTiltSEWUpper
+    - LatticeHalfTiltSWNUpper
+    - LatticeHalfTiltNWEUpper
+    - LatticeHalfTiltNEWLower
+    - LatticeHalfTiltSENLower
+    - LatticeHalfTiltSWELower
+    - LatticeHalfTiltNWSLower
+    - LatticeHalfTiltNEWUpper
+    - LatticeHalfTiltSENUpper
+    - LatticeHalfTiltSWEUpper
+    - LatticeHalfTiltNWSUpper
+    # Hardlight/Mono end
   - type: LimitedCharges
     maxCharges: 30
   - type: Sprite
