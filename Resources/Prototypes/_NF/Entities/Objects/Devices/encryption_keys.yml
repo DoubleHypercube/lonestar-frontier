@@ -19,9 +19,9 @@
 - type: entity
   parent: [EncryptionKey, BaseC4ContrabandUnredeemable] # Coyote: Add BaseC2ContrabandUnredeemable
   id: EncryptionKeyNfsd
-  name: NFSD encryption key
+  name: LSRD encryption key
   categories: [ DoNotMap ]
-  description: An encryption key for the New Frontier Sheriff's Department channel.
+  description: An encryption key for the Lone Star Rangers Division channel.
   components:
   - type: EncryptionKey
     channels:

@@ -76,7 +76,7 @@
 - type: entity
   parent: [ BaseC4ContrabandUnredeemable, ClothingBeltAssault, ContentsExplosionResistanceBase ] # Coyote: ContentsExplosionResistanceBase added
   id: ClothingBeltNfsd
-  name: NFSD belt
+  name: LSRD belt
   description: A tactical assault belt.
   components:
   - type: Sprite
@@ -89,7 +89,7 @@
 - type: entity
   parent: [ BaseC4ContrabandUnredeemable, ClothingBeltSecurityWebbing, ContentsExplosionResistanceBase ] # Coyote: ContentsExplosionResistanceBase added
   id: ClothingBeltNfsdWebbing
-  name: NFSD webbing
+  name: LSRD webbing
   description: A tactical assault webbing.
   components:
   - type: Sprite

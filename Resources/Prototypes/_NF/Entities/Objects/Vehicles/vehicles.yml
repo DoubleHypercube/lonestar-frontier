@@ -549,14 +549,14 @@
             - Gun # Any gun :(, including RPDS
         priority: 2
 
-# NFSD
+# LSRD
 - type: entity
   parent:
   - VehicleHoverbikeMailcarrier
   - BaseC4ContrabandUnredeemable
   id: NFVehicleHoverbikeNfsd
-  name: NFSD hoverbike
-  description: An NFSD issued turbine with bike handles. Very safe.
+  name: LSRD hoverbike
+  description: An LSRD issued turbine with bike handles. Very safe.
   components:
   - type: Vehicle
     sirenSound:

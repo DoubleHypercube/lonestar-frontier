@@ -1,5 +1,5 @@
 # Role timers
-JobSecurityCadetOld = Security Cadet
+JobSecurityJunior RangerOld = Security Junior Ranger
 JobSecurityOfficerOld = Security Officer
 JobHeadOfSecurityOld = Head of Security
 JobWardenOld = Warden

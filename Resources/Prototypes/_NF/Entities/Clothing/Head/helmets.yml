@@ -16,8 +16,8 @@
 - type: entity
   parent: [ BaseC4ContrabandUnredeemable, ClothingHeadHelmetBasic ]
   id: ClothingHeadHelmetNfsd
-  name: NFSD helmet
-  description: An NFSD issued helmet to protect your head.
+  name: LSRD helmet
+  description: An LSRD issued helmet to protect your head.
   components:
   - type: Sprite
     sprite: _NF/Clothing/Head/Helmets/nfsd.rsi

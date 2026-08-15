@@ -1,6 +1,6 @@
 job-name-warden = Warden
 job-name-security = Security Officer
-job-name-cadet = Security Cadet
+job-name-cadet = Security Junior Ranger
 job-name-hos = Head of Security
 job-name-detective = Detective
 job-name-borg = Cyborg
@@ -83,7 +83,7 @@ JobChiefEngineer = Plant Manager
 JobChiefMedicalOfficer = Chief Medical Officer
 JobClown = Clown
 JobDetective = Detective
-JobBrigmedic = Brigmedic
+JobCorpsman = Corpsman
 JobERTChaplain = ERT Chaplain
 JobERTEngineer = ERT Engineer
 JobERTJanitor = ERT Janitor
@@ -92,8 +92,8 @@ JobERTMedical = ERT Medical
 JobERTSecurity = ERT Security
 # Frontier: Head of Personnel<Station Representative
 JobHeadOfPersonnel = Station Representative
-# Frontier: Head of Security<Sheriff
-JobHeadOfSecurity = Sheriff
+# Frontier: Head of Security<Chief Ranger
+JobHeadOfSecurity = Chief Ranger
 JobJanitor = Janitor
 JobLawyer = Lawyer
 JobLibrarian = Librarian
@@ -111,15 +111,15 @@ JobResearchAssistant = Research Assistant
 JobResearchDirector = Research Director
 JobSalvageSpecialist = Salvage Specialist
 JobScientist = Scientist
-# Frontier: Security Cadet<Cadet
-JobSecurityCadet = Cadet
-# Frontier: Security Officer<Deputy
-JobSecurityOfficer = Deputy
+# Frontier: Security Junior Ranger<Junior Ranger
+JobSecurityJunior Ranger = Junior Ranger
+# Frontier: Security Officer<Ranger
+JobSecurityOfficer = Ranger
 JobServiceWorker = Service Worker
 JobStationAi = Station AI
 JobStationEngineer = Station Engineer
 JobTechnicalAssistant = Technical Assistant
 JobVisitor = Visitor
-# Frontier: Warden<Bailiff
-JobWarden = Bailiff
+# Frontier: Warden<Chief Armorer
+JobWarden = Chief Armorer
 JobZookeeper = Zookeeper

@@ -3,7 +3,7 @@
   - ClothingEyesHudSecurity
   - BaseC4Contraband
   id: ClothingEyesHudNfsd
-  name: NFSD hud
+  name: LSRD hud
   description: A heads-up display that scans the humanoids in view and provides accurate data about their ID status and criminal records.
   components:
   - type: Sprite
@@ -42,7 +42,7 @@
   - ClothingEyesHudSecurity
   - BaseC4Contraband
   id: ClothingEyesHudNfsdPatch
-  name: NFSD hud eyepatch
+  name: LSRD hud eyepatch
   description: A heads-up display that scans the humanoids in view and provides accurate data about their ID status and criminal records.
   components:
   - type: Sprite
