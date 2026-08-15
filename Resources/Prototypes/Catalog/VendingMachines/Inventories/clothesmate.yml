@@ -239,18 +239,8 @@
     KneeBoots: 4
     LatexSocks: 4
     LatexHeels: 4
-    StripperOutfitWhite: 4
-    StripperOutfitBlue: 4
-    StripperOutfitYellow: 4
-    StripperOutfitGreen: 4
-    StripperOutfitRed: 4
-    StripperOutfitOrange: 4
-    StripperOutfitPurple: 4
-    StripperOutfitBlack: 4
-    StripperOutfitLatexBlue: 4
-    StripperOutfitLatexPink: 4
     BunnysuitBoxUnionJack: 6
-    BunnysuitBoxUSSP: 6
+    BunnysuitBoxHero: 6
     BunnysuitBoxNetrunner: 6
     BunnysuitBoxMail: 6
     BunnysuitBoxJanitor: 6
@@ -279,9 +269,9 @@
     BunnysuitBoxAtmos: 6
     BunnysuitBoxChiefMedicalOfficer: 6
     BunnysuitBoxResearchDirector: 6
-    BunnysuitBoxCrimson: 6
-    BunnysuitBoxCrimsonWhite: 6
-    BunnysuitBoxCrimsonGold: 6
+    BunnysuitBoxSecurity: 6
+    BunnysuitBoxWarden: 6
+    BunnysuitBoxHoS: 6
     BunnysuitBoxHeadOfPersonnel: 6
     BunnysuitBoxRed: 6
     BunnysuitBoxGreen: 6
