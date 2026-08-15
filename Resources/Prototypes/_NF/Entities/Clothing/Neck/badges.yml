@@ -16,14 +16,14 @@
 - type: entity
   parent: ClothingNeckNfsdBadge
   id: ClothingNeckNfsdBadgeSecurityCadet
-  name: LSRD cadet badge
+  name: LSRD junior ranger badge
   suffix: Bronze - Cadet
 
 - type: entity
   parent: ClothingNeckNfsdBadge
   id: ClothingNeckNfsdBadgeSecurity
   suffix: Silver - Deputy
-  name: LSRD deputy badge
+  name: LSRD ranger badge
   components:
   - type: Sprite
     sprite: _NF/Clothing/Neck/Scarfs/nfsd_silver_badge.rsi
@@ -34,7 +34,7 @@
   parent: ClothingNeckNfsdBadge
   id: ClothingNeckNfsdBadgeSecurityBrigmedic
   suffix: Silver - Brigmedic
-  name: LSRD brigmedic badge
+  name: LSRD corpsman badge
   components:
   - type: Sprite
     sprite: _NF/Clothing/Neck/Scarfs/nfsd_silvercross_badge.rsi
@@ -56,7 +56,7 @@
   parent: ClothingNeckNfsdBadge
   id: ClothingNeckNfsdBadgeSeniorOfficer
   suffix: Gold - Sergeant
-  name: LSRD sergeant badge
+  name: LSRD senior ranger badge
   components:
   - type: Sprite
     sprite: _NF/Clothing/Neck/Scarfs/nfsd_gold_badge.rsi
@@ -67,7 +67,7 @@
   parent: ClothingNeckNfsdBadge
   id: ClothingNeckNfsdBadgeWarden
   suffix: Gold - Bailiff
-  name: LSRD bailiff badge
+  name: LSRD chief armourer badge
   components:
   - type: Sprite
     sprite: _NF/Clothing/Neck/Scarfs/nfsd_gold_badge.rsi
@@ -78,7 +78,7 @@
   parent: ClothingNeckNfsdBadge
   id: ClothingNeckNfsdBadgeSheriff
   suffix: Star - Sheriff
-  name: LSRD sheriff badge
+  name: LSRD chief ranger badge
   components:
   - type: Sprite
     sprite: _NF/Clothing/Neck/Scarfs/nfsd_star_badge.rsi

@@ -28,7 +28,7 @@
   parent: ClothingHandsGlovesCombat
   id: ClothingHandsGlovesCombatNfsdBrown
   name: LSRD combat gloves
-  description: Insulated gloves for a deputy sheriff.
+  description: Insulated gloves for a deputy ranger.
   components:
   - type: Sprite
     sprite: _NF/Clothing/Hands/Gloves/nfsd_brown.rsi
@@ -41,7 +41,7 @@
   parent: ClothingHandsGlovesCombatNfsdBrown
   id: ClothingHandsGlovesCombatNfsdCream
   name: LSRD combat gloves
-  description: Insulated gloves for a deputy sheriff.
+  description: Insulated gloves for a deputy ranger.
   components:
   - type: Sprite
     sprite: _NF/Clothing/Hands/Gloves/nfsd_cream.rsi

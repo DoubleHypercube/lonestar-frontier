@@ -9,7 +9,7 @@
   abstract: true
   components:
   - type: StorageFill
-    contents: # Coyote: changed bailiff and sheriff to all senior staff on majority of papers, removed amnesty
+    contents: # Coyote: changed bailiff and chief ranger to all senior staff on majority of papers, removed amnesty
     - id: PaperWrittenNfsdWarrant
     - id: PaperWrittenNfsdReport
     - id: PaperWrittenNfsdArrestWarrant

@@ -55,7 +55,7 @@
 - type: entity
   parent: [ClothingHeadsetAlt, BaseC4Contraband]
   id: ClothingHeadsetAltNfsdBrownCentcom
-  name: sheriff's over-ear headset
+  name: chief ranger's over-ear headset
   categories: [ HideSpawnMenu ]
   components:
   - type: ContainerFill

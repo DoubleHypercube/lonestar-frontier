@@ -3,7 +3,7 @@
   parent: ClothingOuterHardsuitNfsdBronze
   id: ClothingOuterHardsuitTsfMarineBronze
   name: TSF bronze tactical suit
-  description: A surplus marine hardsuit, issued for patrol duty. This bronze variant has cadet rank markings.
+  description: A surplus marine hardsuit, issued for patrol duty. This bronze variant has junior rangerrank markings.
   components:
   - type: Sprite
     sprite: _Mono/Clothing/OuterClothing/Hardsuits/m82c_bronze.rsi
@@ -42,7 +42,7 @@
   parent: ClothingOuterHardsuitNfsdBronze
   id: ClothingOuterHardsuitTsfMarineMedic
   name: TSF corpsman tactical suit
-  description: A surplus marine hardsuit, issued for patrol duty. This brighter variant has brigmedic rank markings.
+  description: A surplus marine hardsuit, issued for patrol duty. This brighter variant has corpsman rank markings.
   components:
   - type: Sprite
     sprite: _Mono/Clothing/OuterClothing/Hardsuits/m82b.rsi

@@ -57,7 +57,7 @@
 - type: entity
   parent: [ BaseC4ContrabandUnredeemable, ClothingMaskGasSwat ]
   id: ClothingMaskGasSheriff
-  name: LSRD sheriff gas mask
+  name: LSRD chief ranger gas mask
   description: A gas mask worthy of a sheriff.
   components:
   - type: Sprite

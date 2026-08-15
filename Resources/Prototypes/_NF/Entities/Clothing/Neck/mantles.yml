@@ -39,7 +39,7 @@
 - type: entity
   parent: ClothingNeckBase
   id: ClothingNeckMantleSheriff
-  name: sheriff's mantle
+  name: chief ranger's mantle
   description: Shootouts with nukies are just another Tuesday for this Sheriff. This mantle is a symbol of commitment to the station.
   components:
   - type: Sprite

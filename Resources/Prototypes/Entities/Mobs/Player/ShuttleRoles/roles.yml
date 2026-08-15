@@ -106,7 +106,7 @@
 
 - type: entity
   id: RandomHumanoidVisitorSecurityCadet
-  name: visiting security cadet role
+  name: visiting security junior rangerrole
   categories: [ HideSpawnMenu ] # Frontier
   components:
     - type: Sprite

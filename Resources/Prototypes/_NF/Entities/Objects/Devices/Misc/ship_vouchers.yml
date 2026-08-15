@@ -26,7 +26,7 @@
 - type: entity
   parent: BaseShipVoucher
   id: ShipVoucherNfsdSergeant
-  name: LSRD sergeant ship voucher
+  name: LSRD senior ranger ship voucher
   description: Allows for one free small to medium LSRD ship purchase. Destroyed on sale.
   components:
   - type: Sprite
@@ -46,7 +46,7 @@
 - type: entity
   parent: ShipVoucherNfsdSergeant
   id: ShipVoucherNfsdBailiff
-  name: LSRD bailiff ship voucher
+  name: LSRD chief armourer ship voucher
   description: Allows for one free small to capital LSRD ship purchase. Destroyed on sale.
   components:
   - type: Sprite

@@ -149,7 +149,7 @@
   parent: ClothingOuterHardsuitBaseNFNfsd
   id: ClothingOuterHardsuitNfsdBronze
   name: LSRD bronze patrol suit
-  description: The standard-issue LSRD space proof suit for patrol duty. This bronze variant has cadet rank markings.
+  description: The standard-issue LSRD space proof suit for patrol duty. This bronze variant has junior rangerrank markings.
   components:
   - type: Sprite
     sprite: _NF/Clothing/OuterClothing/Hardsuits/nfsd_bronze.rsi
@@ -201,8 +201,8 @@
 - type: entity
   parent: ClothingOuterHardsuitNfsdBronze
   id: ClothingOuterHardsuitNfsdSheriff
-  name: LSRD sheriff patrol suit
-  description: The standard-issue LSRD space proof suit for patrol duty. This gold variant has sheriff rank markings.
+  name: LSRD chief ranger patrol suit
+  description: The standard-issue LSRD space proof suit for patrol duty. This gold variant has chief ranger rank markings.
   components:
   - type: Sprite
     sprite: _NF/Clothing/OuterClothing/Hardsuits/nfsd_sheriff.rsi
@@ -214,8 +214,8 @@
 - type: entity
   parent: ClothingOuterHardsuitNfsdBronze
   id: ClothingOuterHardsuitNfsdBrigmedic
-  name: LSRD brigmedic patrol suit
-  description: The standard-issue LSRD space proof suit for patrol duty. This brighter variant has brigmedic rank markings.
+  name: LSRD corpsman patrol suit
+  description: The standard-issue LSRD space proof suit for patrol duty. This brighter variant has corpsman rank markings.
   components:
   - type: Sprite
     sprite: _NF/Clothing/OuterClothing/Hardsuits/nfsd_brigmed.rsi

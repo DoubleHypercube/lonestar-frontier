@@ -251,7 +251,7 @@
 - type: entity
   parent: [ClothingHeadset, BaseC4ContrabandUnredeemable] # Frontier: BaseSecurityContraband<BaseC2ContrabandUnredeemable # Coyote: BaseC2ContrabandUnredeemable -> BaseC4ContrabandUnredeemable
   id: ClothingHeadsetBrigmedic
-  name: brigmedic headset
+  name: corpsman headset
   description: A headset that helps to hear the death cries.
   components:
   - type: ContainerFill
