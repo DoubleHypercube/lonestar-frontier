@@ -164,10 +164,10 @@
     BunnyJacketUnionJack: 8
     BunnyJacketChef: 8
   contrabandInventory:
-    BunnysuitCentComm: 8
-    BunnyEarsCentComm: 8
-    BowtieCentComm: 8
-    BunnyJacketCentComm: 8
+    BunnysuitCentcomm: 8
+    BunnyEarsCentcomm: 8
+    BowtieCentcomm: 8
+    BunnyJacketCentcomm: 8
   emaggedInventory:
     BunnysuitSyndie: 8
     BunnyEarsSyndie: 8
