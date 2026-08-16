@@ -178,7 +178,7 @@
 
 - type: entity
   parent: BunnysuitBase
-  id: BunnysuitCentComm
+  id: BunnysuitCentcomm
   name: central command bunnysuit
   components:
   - type: Sprite

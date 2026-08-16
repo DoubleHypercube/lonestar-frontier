@@ -11,7 +11,7 @@
 
 - type: entity
   parent: BunnyEarsBase
-  id: BunnyEarsCentComm
+  id: BunnyEarsCentcomm
   name: central command bunny ears
   components:
   - type: Sprite
