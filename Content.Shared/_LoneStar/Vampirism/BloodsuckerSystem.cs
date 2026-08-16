@@ -53,8 +53,9 @@ public sealed class BloodsuckerSystem : EntitySystem
         if (!_solution.ResolveSolution(target, bloodstream.BloodSolutionName, ref bloodstream.BloodSolution, out var solution))
             return false;
 
-        var removed = solution.RemoveReagent(bloodstream.BloodReagent, component.Amount);
-        if (removed > 0 && _bloodstream.TryAddToChemicals(user, new Solution(bloodstream.BloodReagent, removed)))
+        var reagent = solution.Contents[0].Reagent;
+        var removed = solution.RemoveReagent(reagent, component.Amount);
+        if (removed > 0 && _bloodstream.TryAddToChemicals(user, new Solution(reagent.Prototype, removed)))
             _audio.PlayPredicted(component.SuckSound, user, user);
 
         _actions.StartUseDelay(component.ActionEntity);
