@@ -600,3 +600,17 @@
         - id: BowtieMiner
         - id: BunnyEarsMiner
 
+- type: entity
+  parent: BunnysuitBox
+  id: BunnysuitBoxCentcomm
+  name: centcomm bunnysuit box
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: BunnysuitCentcomm
+        - id: BunnyJacketCentcomm
+        - id: BowtieCentcomm
+        - id: BunnyEarsCentcomm
+
