@@ -1,3 +1,11 @@
+using Content.Shared.Actions;
+using Content.Shared.Body.Components;
+using Content.Shared.Body.Systems;
+using Content.Shared.Chemistry.Components;
+using Content.Shared.Chemistry.EntitySystems;
+using Content.Shared.DoAfter;
+using Robust.Shared.Audio.Systems;
+
 namespace Content.Shared._Lonestar.Vampirism;
 
 public sealed class BloodsuckerSystem : EntitySystem
@@ -45,9 +53,8 @@ public sealed class BloodsuckerSystem : EntitySystem
         if (!_solution.ResolveSolution(target, bloodstream.BloodSolutionName, ref bloodstream.BloodSolution, out var solution))
             return false;
 
-        var reagent = bloodstream.BloodReferenceSolution.Contents[0].Reagent;
-        var removed = solution.RemoveReagent(reagent, component.Amount);
-        if (removed > 0 && _bloodstream.TryAddToBloodstream(user, new Solution(reagent.Prototype, removed)))
+        var removed = solution.RemoveReagent(bloodstream.BloodReagent, component.Amount);
+        if (removed > 0 && _bloodstream.TryAddToChemicals(user, new Solution(bloodstream.BloodReagent, removed)))
             _audio.PlayPredicted(component.SuckSound, user, user);
 
         _actions.StartUseDelay(component.ActionEntity);
