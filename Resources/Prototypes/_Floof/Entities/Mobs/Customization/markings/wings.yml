@@ -3,7 +3,7 @@
   bodyPart: Tail
   markingCategory: Tail
   sprites:
-    - sprite: SimpleStation14/Mobs/Customization/wings96x34.rsi
+    - sprite: _SimpleStation/Mobs/Customization/wings96x34.rsi
       state: fly
 
 - type: marking
@@ -11,7 +11,7 @@
   bodyPart: Tail
   markingCategory: Tail
   sprites:
-    - sprite: SimpleStation14/Mobs/Customization/wings96x34.rsi
+    - sprite: _SimpleStation/Mobs/Customization/wings96x34.rsi
       state: robotic
 
 - type: marking
@@ -19,7 +19,7 @@
   bodyPart: Tail
   markingCategory: Tail
   sprites:
-    - sprite: SimpleStation14/Mobs/Customization/wings96x34.rsi
+    - sprite: _SimpleStation/Mobs/Customization/wings96x34.rsi
       state: skeleton
 
 - type: marking
@@ -27,7 +27,7 @@
   bodyPart: Tail
   markingCategory: Tail
   sprites:
-    - sprite: SimpleStation14/Mobs/Customization/wings64x32.rsi
+    - sprite: _SimpleStation/Mobs/Customization/wings64x32.rsi
       state: harpy
 
 - type: marking
