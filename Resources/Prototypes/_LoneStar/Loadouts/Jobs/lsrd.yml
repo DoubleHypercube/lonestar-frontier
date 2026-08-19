@@ -1,0 +1,11 @@
+- type: loadout
+  id: LoadoutLSRDHud
+  price: 0
+  equipment:
+    eyes: ClothingEyesHudNfsd
+
+- type: loadout
+  id: LoadoutLSRDHudEyepatch
+  price: 0
+  equipment:
+    eyes: ClothingEyesHudNfsdPatch
