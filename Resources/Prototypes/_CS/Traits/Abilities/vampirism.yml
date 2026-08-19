@@ -6,6 +6,7 @@
   components:
   - type: Action
     useDelay: 2
+    itemIconStyle: BigAction
     icon:
       sprite: _LoneStar/Interface/Actions/traits.rsi
       state: fangs
@@ -13,6 +14,9 @@
     checkCanAccess: true
     range: 2
   - type: EntityTargetAction
+    whitelist:
+      components:
+      - Actor
     canTargetSelf: false
     event: !type:SuckBloodEvent
 
