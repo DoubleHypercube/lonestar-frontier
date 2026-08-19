@@ -9,3 +9,9 @@
   price: 0
   equipment:
     eyes: ClothingEyesHudNfsdPatch
+
+- type: loadout
+  id: LoadoutLSRDBomber
+  price: 0
+  equipment:
+    outerClothing: ClothingOuterCoatNfsdBomber
