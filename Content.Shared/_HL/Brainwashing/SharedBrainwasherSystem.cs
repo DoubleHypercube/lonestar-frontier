@@ -5,6 +5,7 @@ using Content.Shared.Silicons.Borgs.Components;
 using Content.Shared.Verbs;
 using Robust.Shared.Audio;
 using Robust.Shared.GameStates;
+using Robust.Shared.Player;
 using Robust.Shared.Serialization;
 using Robust.Shared.Utility;
 
@@ -48,8 +49,7 @@ public abstract class SharedBrainwasherSystem : EntitySystem // HL: Move verbs t
 
     private void ConfigureVerb(EntityUid uid, BrainwasherComponent component, GetVerbsEvent<Verb> args)
     {
-        if (!args.CanAccess || !args.CanInteract
-            || HasComp<MobStateComponent>(uid) && args.User != uid)
+        if (!args.CanAccess || !args.CanInteract || HasComp<MobStateComponent>(uid) && args.User != uid)
             return;
 
         args.Verbs.Add(new Verb
@@ -63,8 +63,7 @@ public abstract class SharedBrainwasherSystem : EntitySystem // HL: Move verbs t
 
     private void BrainwashingVerb(EntityUid uid, BrainwasherComponent component, GetVerbsEvent<InnateVerb> args)
     {
-        if (!args.CanAccess || !args.CanInteract || args.User != uid
-            || HasComp<BorgChassisComponent>(args.Target))
+        if (!args.CanAccess || !args.CanInteract || args.User != uid || HasComp<BorgChassisComponent>(args.Target) || !HasComp<ActorComponent>(args.Target))
             return;
 
         if (uid != args.Target && _consentSystem.HasConsent(args.Target, "MindControl"))
