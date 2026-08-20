@@ -153,17 +153,15 @@
   products:
     FiveOClock: 10
 
-- type: reaction
-  id: Mliko
-  requiredMixerCategories:
-  - Shake
-  reactants:
-    Beer:
-      amount: 1
-    Milk: # Lonestar
-      amount: 1
-  products:
-    Mliko: 2
+# - type: reaction # Lonestar - figure this out later, I'm tired
+#   id: Mliko
+#   requiredMixerCategories:
+#   - Shake
+#   reactants:
+#     Beer:
+#       amount: 1
+#   products:
+#     Mliko: 3
 
 - type: reaction
   id: DoubleIceCream
