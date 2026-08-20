@@ -160,8 +160,10 @@
   reactants:
     Beer:
       amount: 1
+    Milk: # Lonestar
+      amount: 1
   products:
-    Mliko: 3
+    Mliko: 2
 
 - type: reaction
   id: DoubleIceCream
