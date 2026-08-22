@@ -1,8 +1,8 @@
-using Content.Server.Body.Systems;
 using Content.Server.Consent;
 using Content.Shared._CS.Traits.Abilities;
 using Content.Shared.Actions;
 using Content.Shared.Body.Components;
+using Content.Shared.Body.Systems;
 using Content.Shared.Chemistry.Components;
 using Content.Shared.Popups;
 using Robust.Shared.Audio.Systems;
@@ -15,7 +15,7 @@ public sealed class AphrodesiacBiteSystem : EntitySystem
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly SharedPopupSystem _popup = default!;
     [Dependency] private readonly SharedActionsSystem _actions = default!;
-    [Dependency] private readonly BloodstreamSystem _bloodstream = default!;
+    [Dependency] private readonly SharedBloodstreamSystem _bloodstream = default!;
 
     public override void Initialize()
     {
@@ -35,25 +35,32 @@ public sealed class AphrodesiacBiteSystem : EntitySystem
         if (ev.Handled)
             return;
 
-        TryInject(ev.Target, ev.Performer);
+        if (TryInject(ev.Target, ev.Performer))
+            ev.Handled = true;
     }
 
-    public void TryInject(EntityUid target, EntityUid user)
+    public bool TryInject(EntityUid target, EntityUid user)
     {
-        if (!TryComp<BloodstreamComponent>(target, out var bloodstream))
-            return;
+        if (!TryComp<BloodstreamComponent>(target, out _))
+            return false;
 
         if (!TryComp<AphrodesiacBiteComponent>(user, out var bite))
-            return;
+            return false;
 
         if (bite.RequiresConsent && !_consent.HasConsent(target, bite.ConsentToggleId))
         {
             _popup.PopupEntity(Loc.GetString("aphrodesiac-no-consent", ("target", target)), user, PopupType.LargeCaution);
-            return;
+            return false;
         }
 
         var solution = new Solution(bite.Reagent, bite.Amount);
         if (_bloodstream.TryAddToChemicals(target, solution))
+        {
             _audio.PlayPvs(bite.Sound, user);
+            _actions.StartUseDelay(bite.ActionEntity);
+            return true;
+        }
+
+        return false;
     }
 }
