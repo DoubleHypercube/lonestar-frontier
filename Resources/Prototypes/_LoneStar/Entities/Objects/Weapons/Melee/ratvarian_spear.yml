@@ -16,13 +16,18 @@
     - suitStorage
     - belt
     - back
+  - type: Wieldable
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Piercing: 15
   - type: MeleeWeapon
     wideAnimationRotation: -135
     angle: 0
     animation: WeaponArcThrust
     damage:
       types:
-        Piercing: 25
+        Piercing: 20
     soundHit:
       path: /Audio/_LoneStar/Items/Weapons/cosmicsword_hit.ogg
       params:
