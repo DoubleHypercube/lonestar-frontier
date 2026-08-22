@@ -7,6 +7,9 @@
   suffix: Empty
   abstract: true
   components:
+  - type: Tag # Hardlight: Pouch tag; TODO pouch belt
+    tags:
+    - Pouch
   - type: Sprite
     sprite: _NF/Objects/Storage/Pouches/pouch.rsi
   - type: Item
@@ -18,7 +21,7 @@
   - type: Storage
     maxItemSize: Small
     grid:
-    - 0,0,2,1
+    - 0,0,3,1 # Hardlight: 2x3 -> 4x2
     blacklist:
       components: [ Storage ] # No bagception
   - type: StaticPrice
@@ -289,7 +292,20 @@
   id: NFPouchEngineering
   parent: NFPouchUtility
   name: engineer's pouch
+  description: Specially designed to fit tools easily. # Hardlight: Specific description
   components:
+  - type: Storage # Hardlight start: 2x6 but only fits tools
+    maxItemSize: Normal
+    grid:
+    - 0,0,5,1
+    whitelist:
+      components:
+        - Tool
+        - GasAnalyzer
+        - SprayPainter
+        - Flashlight # Hardlight end
+        - TrayScanner # Lonestar
+        - Signaller # Lonestar
   - type: Sprite
     layers:
     - state: base
@@ -464,7 +480,18 @@
   id: NFPouchFirstAid
   parent: NFPouchBase
   name: first aid pouch
+  description: Contains several subcompartments for a first responder's topicals. # Hardlight: Specific description
   components:
+  - type: Storage # Hardlight: 4x3 (1/4th medical bag), only fits topicals
+    maxItemSize: Small
+    grid:
+    - 0,0,3,2
+    whitelist:
+      tags:
+        - Ointment
+        - Brutepack
+        - Bloodpack
+        - Gauze # Hardlight end
   - type: Sprite
     layers:
     - state: base
@@ -621,7 +648,23 @@
   id: NFPouchJanitor
   parent: NFPouchUtility
   name: janitor's pouch
+  description: Somehow bigger on the inside. Stores soap, buckets, and other janitorial tools. # Hardlight: Specific description
   components:
+  - type: Storage # Hardlight start: 4x4, holds janitor stuff.
+    maxItemSize: Normal
+    grid:
+    - 0,0,3,3
+    whitelist:
+      components:
+        - LightReplacer
+        - Bucket
+      tags:
+        - Mop # rags
+        - WetFloorSign
+        - Plunger
+        - Soap
+        - Spray # Hardlight end
+        - Cleanade # Lonestar
   - type: Sprite
     layers:
     - state: base
@@ -671,7 +714,18 @@
   id: NFPouchHydroponics
   parent: NFPouchUtility
   name: botanist's pouch
+  description: Made of all-natural materials for holding your seeds. # Hardlight: Specific description
   components:
+  - type: Storage # Hardlight: 4x4, fits seeds and bottles/vials
+    maxItemSize: Tiny
+    grid:
+    - 0,0,3,3
+    whitelist:
+      tags: # intended for robust, dieth, etc
+        - CentrifugeCompatible
+        - Bottle
+      components:
+        - Seed
   - type: Sprite
     layers:
     - state: base
@@ -984,7 +1038,29 @@
   id: NFPouchPrivateSecurity
   parent: NFPouchUtility
   name: private security pouch
+  description: Holds your magazines securely. # Hardlight: Specific description
   components:
+  - type: Storage # Hardlight: 6x4, but only holds magazines. ## Lonestar: ok maybe 6x4 is too much
+    maxItemSize: Small
+    grid:
+    - 0,0,3,3
+    whitelist:
+      tags: # `cat */tags.yml | grep "id: .*Magazine" | sed 's/.*id:/-/'` my beloved
+        - CSMagazinePistol40
+        - CSMagazineSubMachineGunPistol40
+        - MagazinePistolSpecial
+        - NFMagazinePistol35
+        - NFMagazineHighCapacityPistol35
+        - NFMagazineSubMachineGunPistol35
+        - NFMagazineSubMachineGunTopMountedPistol35
+        - NFMagazinePistol45
+        - NFMagazineSubMachineGunPistol45
+        - NFMagazineRifle20
+        - NFMagazineClipRifle20
+        - NFMagazineBoxRifle20
+        - NFMagazineDrumRifle20
+        - NFMagazineRifle30
+        - NFMagazineLowCapacityRifle30
   - type: Sprite
     layers:
     - state: base
@@ -1346,6 +1422,7 @@
   id: NFGoblinMadeTrashPouch
   parent: [ RecyclableItemPlasticSmall, NFPouchBase ]
   name: trashuch
+  description: Bigger on the inside. Holds all your mechanisms and thingybobs. # Lonestar: Unique description
   components:
   - type: Sprite
     sprite: _NF/Objects/Storage/Pouches/trash_pouch.rsi
@@ -1374,6 +1451,8 @@
   - type: GoblinMade
   - type: Dumpable
   - type: Storage
+    grid:
+    - 0,0,5,3 # Lonestar: Bigger on the inside
     maxItemSize: Small
     areaInsert: true
     storageOpenSound:

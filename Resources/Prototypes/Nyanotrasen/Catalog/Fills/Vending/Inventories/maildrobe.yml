@@ -20,3 +20,9 @@
     RubberStampDenied: 3 # Frontier 1<3
     BoxFolderClipboard: 3 # Frontier
     BoxEnvelope: 4 # Frontier
+    ClothingBackpackTrunkMail: 2
+    ClothingBackpackTrunkSpaceCourier: 2
+  emaggedInventory:
+    ClothingBackpackTrunkSyndicate: 1
+  contrabandInventory:
+    BoxCourier: 1
