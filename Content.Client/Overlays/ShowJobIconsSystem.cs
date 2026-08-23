@@ -28,7 +28,10 @@ public sealed class ShowJobIconsSystem : EquipmentHudSystem<ShowJobIconsComponen
 
     private void OnGetStatusIconsEvent(EntityUid uid, StatusIconComponent _, ref GetStatusIconsEvent ev)
     {
-        if (!IsActive || !HasComp<InventoryComponent>(uid) || !HasComp<HandsComponent>(uid) || !HasComp<HumanoidAppearanceComponent>(uid)) // Lonestar: Check for humanoidness
+        if (!IsActive)
+            return;
+
+        if (!HasComp<InventoryComponent>(uid) || !HasComp<HandsComponent>(uid) || !HasComp<HumanoidAppearanceComponent>(uid)) // Lonestar: Check for humanoidness
             return;
 
         var iconId = JobIconForNoId;
