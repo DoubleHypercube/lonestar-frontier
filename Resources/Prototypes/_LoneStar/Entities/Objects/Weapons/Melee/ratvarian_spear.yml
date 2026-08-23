@@ -2,7 +2,7 @@
   parent: [ BaseItem, BaseC1Contraband ]
   id: RatvarianSpear
   name: ratvarian spear
-  description: Made from fine quality brass, it bears the insignia of the Clockwork Cult on it. The mechanisms hum with barely contained energy, aching to be released.
+  description: Made from fine quality brass, it bears the insignia of the Clockwork Cult on it.
   components:
   - type: Sprite
     sprite: _LoneStar/Objects/Weapons/Melee/ratvarian_spear.rsi
