@@ -1,5 +1,6 @@
 using Content.Shared.Access.Components;
 using Content.Shared.Access.Systems;
+using Content.Shared.Humanoid; // Lonestar: Check for humanoidness
 using Content.Shared.Overlays;
 using Content.Shared.PDA;
 using Content.Shared.StatusIcon;
@@ -25,7 +26,7 @@ public sealed class ShowJobIconsSystem : EquipmentHudSystem<ShowJobIconsComponen
 
     private void OnGetStatusIconsEvent(EntityUid uid, StatusIconComponent _, ref GetStatusIconsEvent ev)
     {
-        if (!IsActive)
+        if (!IsActive || !HasComp<HumanoidAppearanceComponent>(uid)) // Lonestar: Check for humanoidness
             return;
 
         var iconId = JobIconForNoId;
