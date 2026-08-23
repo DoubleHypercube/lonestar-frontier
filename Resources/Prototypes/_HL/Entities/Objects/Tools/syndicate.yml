@@ -86,10 +86,6 @@
     materialComposition:
       Steel: 100
       Plastic: 100
-  - type: StaticPrice
-    price: 28 # Frontier 56<28
-    startSound: /Audio/Items/multitool_drop.ogg
-    endSound: /Audio/Items/multitool_drop.ogg
   - type: GuideHelp
     guides:
     - Networking
