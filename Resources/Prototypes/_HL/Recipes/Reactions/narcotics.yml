@@ -1,0 +1,90 @@
+# Widow Narcotic Synthesis Reactions
+# Three-stage synthesis with cryostasis beaker requirement for final product
+
+# Stage 1: Bite synthesis (Safe gateway)
+- type: reaction
+  id: Bite
+  minTemp: 350
+  impact: Medium
+  reactants:
+    Dynamoxine:
+      amount: 1
+    Diphenhydramine:
+      amount: 1
+    Epinephrine:
+      amount: 1
+  products:
+    Bite: 2
+
+# Stage 2: Venom synthesis (Dangerous precursor)
+- type: reaction
+  id: Venom
+  minTemp: 370
+  impact: Medium
+  reactants:
+    Bite:
+      amount: 2
+    Grit:
+      amount: 2
+    Kaiser:
+      amount: 2
+    Phenol:
+      amount: 1
+  products:
+    Venom: 4
+
+# Stage 3A: Widow synthesis (Elite product - requires cryostasis beaker preparation)
+# NOTE: Pre-mix components in cryostasis beaker, then transfer to cold vessel for reaction
+- type: reaction
+  id: Widow
+  maxTemp: 250
+  impact: High
+  reactants:
+    Venom:
+      amount: 2
+    AbyssalBlood:
+      amount: 1
+    Artifexium:
+      amount: 1
+    Phalanximine:
+      amount: 1
+    Leporazine:
+      amount: 1
+  products:
+    Widow: 3
+
+# Stage 3B: Ruin synthesis (Failed attempt - without cryostasis beaker)
+- type: reaction
+  id: Ruin
+  minTemp: 250
+  impact: High
+  reactants:
+    Venom:
+      amount: 2
+    AbyssalBlood:
+      amount: 1
+    Artifexium:
+      amount: 1
+    Phalanximine:
+      amount: 1
+    Leporazine:
+      amount: 1
+  products:
+    Ruin: 3
+
+# Advanced Widow Treatment Synthesis
+- type: reaction
+  id: AbyssalCleansingSerum
+  minTemp: 350
+  impact: High
+  reactants:
+    BloodBlack:
+      amount: 5
+    Ethylredoxrazine:
+      amount: 3
+    Stellibinin:
+      amount: 3
+    Phalanximine:
+      amount: 2
+  products:
+    AbyssalCleansingSerum: 2

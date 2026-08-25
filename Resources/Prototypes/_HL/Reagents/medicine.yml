@@ -1,0 +1,155 @@
+# Addictine curing chem
+- type: reagent
+  id: Efflumetonial
+  name: reagent-name-efflumetonial
+  group: Medicine
+  desc: reagent-desc-efflumetonial
+  physicalDesc: reagent-physical-desc-clear
+  flavor: bitter
+  color: "#a0c8ff"
+  recognizable: false
+  spoilConditions:
+    spoilsInto: Ethyloxyephedrine
+    bloodstreamPreserve: true
+    preservedBySpoilageContainers: false
+  metabolisms:
+    Medicine:
+      metabolismRate: 1
+      effects:
+      - !type:AdjustReagent
+        reagent: Addictine
+        amount: -0.5
+      - !type:Jitter
+      # Low amount effects
+      - !type:PopupMessage
+        type: Local
+        visualType: Medium
+        messages:
+          - "efflumetonial-effects-low-1"
+          - "efflumetonial-effects-low-2"
+          - "efflumetonial-effects-low-3"
+          - "efflumetonial-effects-low-4"
+        probability: 0.1
+        conditions:
+        - !type:ReagentThreshold
+          max: 9
+        - !type:ReagentThreshold
+          reagent: Addictine
+          min: 0.1
+      # Medium amount effects
+      - !type:PopupMessage
+        type: Local
+        visualType: Medium
+        messages:
+          - "efflumetonial-effects-high-1"
+          - "efflumetonial-effects-high-2"
+          - "efflumetonial-effects-high-3"
+          - "efflumetonial-effects-high-4"
+          - "efflumetonial-effects-high-5"
+        probability: 0.1
+        conditions:
+        - !type:ReagentThreshold
+          min: 10
+          max: 15
+      - !type:GenericStatusEffect
+        key: Stutter
+        component: StutteringAccent
+        conditions:
+        - !type:ReagentThreshold
+          min: 10
+        - !type:ReagentThreshold
+          reagent: Addictine
+          min: 0.1
+      # Overdose effects
+      - !type:PopupMessage
+        type: Local
+        visualType: LargeCaution
+        messages:
+          - "efflumetonial-effects-overdose-1"
+          - "efflumetonial-effects-overdose-2"
+          - "efflumetonial-effects-overdose-3"
+          - "efflumetonial-effects-overdose-4"
+          - "efflumetonial-effects-overdose-5"
+          - "efflumetonial-effects-overdose-6"
+        probability: 0.1
+        conditions:
+        - !type:ReagentThreshold
+          min: 15
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentThreshold
+          min: 15
+        probability: 0.33
+        damage:
+          types:
+            Asphyxiation: 25
+      - !type:AdjustTemperature
+        conditions:
+        - !type:ReagentThreshold
+          min: 15
+        amount: -26250
+
+- type: reagent
+  id: kelpSap
+  name: reagent-name-kelpSap
+  group: Medicine
+  desc: reagent-desc-kelpsap
+  physicalDesc: reagent-physical-desc-slimy
+  flavor: medicine
+  color: "#9575e6"
+  metabolisms:
+    Medicine:
+      effects:
+      # - !type:HealthChange # Lonestar
+      #   conditions:
+      #   - !type:OrganType
+      #     type: Thaven
+      #     shouldHave: True
+      #   damage:
+      #     types:
+      #       Poison: -0.3
+      #       Bloodloss: -0.3
+      #       Asphyxiation: -0.4
+      #       Cold: -0.1
+      - !type:GenericStatusEffect
+        # conditions: # Lonestar
+        # - !type:OrganType
+        #   type: Thaven
+        #   shouldHave: True
+        # key: SeeingRainbows
+        # component: SeeingRainbows
+        # type: Add
+        # time: 10
+        # refresh: false
+      - !type:HealthChange
+        conditions:
+        # - !type:OrganType # Lonestar
+        #   type: Thaven
+        #   shouldHave: False
+        - !type:ReagentThreshold
+          min: 30
+        damage:
+          types:
+            Asphyxiation: 3
+            Caustic: 1
+            Poison: 1
+    Narcotic:
+      effects:
+      - !type:GenericStatusEffect
+        key: SeeingRainbows
+        component: SeeingRainbows
+        type: Add
+        time: 25
+        refresh: false
+      # - !type:HealthChange # Lonestar
+      #   conditions:
+      #   - !type:OrganType
+      #     type: Thaven
+      #     shouldHave: True
+      #   damage:
+      #     types:
+      #       Poison: -0.5
+      #       Blunt: -0.3
+      #       Bloodloss: -0.8
+      #       Asphyxiation: -1
+      #       Cold: -0.3
