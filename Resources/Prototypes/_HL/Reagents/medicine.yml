@@ -8,10 +8,6 @@
   flavor: bitter
   color: "#a0c8ff"
   recognizable: false
-  spoilConditions:
-    spoilsInto: Ethyloxyephedrine
-    bloodstreamPreserve: true
-    preservedBySpoilageContainers: false
   metabolisms:
     Medicine:
       metabolismRate: 1
