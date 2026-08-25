@@ -296,8 +296,6 @@
     - NfsdTargetsStatic
     - CSMagazineStatic
     - NfsdBoardsStatic
-    dynamicPacks: # Lonestar
-    - HLTacticalBagsPack
   - type: BlueprintReceiver
     whitelist:
       tags:
@@ -351,8 +349,6 @@
     - CSMagazineStatic
     - NFMercenaryArchetypeStatic
     - NFMercenaryArchetypeMeleeStatic
-    dynamicPacks: # Lonestar
-    - HLTacticalBagsPack
   - type: BlueprintReceiver
     whitelist:
       tags:
@@ -418,8 +414,6 @@
     - NFMercenaryMagazineStatic
     - NFMercenaryArchetypeStatic
     - NFMercenaryArchetypeMeleeStatic
-    dynamicPacks: # Lonestar
-    - HLTacticalBagsPack
   - type: BlueprintReceiver
     whitelist:
       tags:

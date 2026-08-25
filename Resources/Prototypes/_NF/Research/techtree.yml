@@ -1741,9 +1741,6 @@
   - ClothingEyesHudBountyHunterPatch
   - NFForensicPad
   - FlashlightSecliteNF
-  - ClothingBackpackTactical #HL
-  - ClothingBackpackExplorer #HL
-  - ClothingRucksack #HL
   technologyPrerequisites:
   - NFBasicAmmunitionProduction
   position: 1, 42

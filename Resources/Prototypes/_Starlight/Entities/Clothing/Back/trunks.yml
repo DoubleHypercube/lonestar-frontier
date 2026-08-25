@@ -2,15 +2,17 @@
   parent: ClothingBackpack
   id: ClothingBackpackTrunk
   name: storage trunk
-  description: A huge storage trunk designed for heavy duty carrying capacity.
+  description: A huge storage trunk designed for vehicles. Too heavy to wear on your back, unfortunately.
   components:
+  - type: Item
+    size: Huge
   - type: Storage
     maxItemSize: Huge
     grid:
-    - 0,0,11,3
+    - 0,0,10,5
   - type: ClothingSpeedModifier
-    walkModifier: 1
-    sprintModifier: 0.85
+    walkModifier: 0.7
+    sprintModifier: 0.7
   - type: MeleeWeapon
     damage:
       types:
@@ -18,6 +20,8 @@
     soundHit:
       collection: MetalThud
   - type: HeldSpeedModifier
+  - type: Sprite
+    sprite: _Starlight/Clothing/Back/Trunks/mailtrunk.rsi
 
 - type: entity
   parent: ClothingBackpackTrunk
@@ -32,7 +36,7 @@
   parent: [ClothingBackpackTrunk, BaseC1Contraband]
   id: ClothingBackpackTrunkSyndicate
   name: syndicate storage trunk
-  description: Huge, metal, reflective, and stylish. All the other syndicates will want to get their hands on this trunk. Unfortunately, it's also heavier than other trunks.
+  description: Huge, metal, reflective, and stylish. All the other syndicates will want to get their hands on this trunk.
   components:
   - type: Sprite
     sprite: _Starlight/Clothing/Back/Trunks/syndicate.rsi
@@ -51,9 +55,6 @@
     reflectProb: 0.2
     reflects:
       - Energy
-  - type: ClothingSpeedModifier
-    walkModifier: 0.8
-    sprintModifier: 0.8
 
 - type: entity
   parent: ClothingBackpackTrunk

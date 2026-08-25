@@ -77,9 +77,6 @@
   - PowerCageMedium
   - PowerCageSmall
   - NFTelescopicShield # Frontier: use NF prefix
-  - ClothingBackpackTactical #HL
-  - ClothingBackpackExplorer #HL
-  - ClothingRucksack #HL
 
 - type: latheRecipePack
   id: SecurityBoards

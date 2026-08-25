@@ -530,9 +530,6 @@
   - ArmorPlateMedium
   - ArmorPlateTactical
   - ArmorPlateRefractive
-  - ClothingBackpackTactical #HL
-  - ClothingBackpackExplorer #HL
-  - ClothingRucksack #HL
 
 # region Engineering & Science
 - type: latheRecipePack
