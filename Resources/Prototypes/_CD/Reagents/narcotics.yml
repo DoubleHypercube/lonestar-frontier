@@ -80,9 +80,6 @@
         - !type:ReagentThreshold
           reagent: Addictine
           max: 8 # maximum addiction severity for this reagent
-        - !type:ReagentThreshold
-          reagent: WeakStimulant
-          min: 6
         reagent: Addictine
         amount: 0.1
       - !type:Jitter
