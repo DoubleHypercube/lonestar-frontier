@@ -51,8 +51,6 @@
     Narcotic:
       metabolismRate: 0.2
       effects:
-      # - !type:ChemRerollPsionic
-      #   bonusMultiplier: 4
       - !type:MovespeedModifier
         walkSpeedModifier: 1.4
         sprintSpeedModifier: 1.4
@@ -60,7 +58,6 @@
         key: StaminaModifier
         component: StaminaModifier
         time: 25
-        type: Add
       - !type:GenericStatusEffect
         key: Adrenaline
         component: IgnoreSlowOnDamage
@@ -119,13 +116,6 @@
     Narcotic:
       metabolismRate: 0.1
       effects:
-      # - !type:ChemRerollPsionic
-      #   bonusMultiplier: 8
-      # - !type:ChangeBloodReagent
-      #   bloodReagent: BloodBlack
-      #   conditions:
-      #   - !type:ReagentThreshold
-      #     min: 1
       - !type:MovespeedModifier
         walkSpeedModifier: 1.5
         sprintSpeedModifier: 1.5
@@ -250,7 +240,6 @@
         - !type:ReagentThreshold
           min: 15
         amount: -26250
-      # Addiction system
       - !type:AdjustReagent
         conditions:
         - !type:ReagentThreshold
@@ -379,11 +368,6 @@
     Poison:
       metabolismRate: 0.015
       effects:
-      # - !type:ChangeBloodReagent
-      #   bloodReagent: BloodBlack
-      #   conditions:
-      #   - !type:ReagentThreshold
-      #     min: 1
       - !type:PopupMessage
         type: Local
         visualType: LargeCaution
@@ -473,10 +457,6 @@
       - !type:AdjustReagent
         reagent: Widow
         amount: -0.5
-      # - !type:RestoreBloodReagent # Lonestar: We do not have this
-      #   conditions:
-      #   - !type:ReagentThreshold
-      #     min: 1
       - !type:GenericStatusEffect
         key: TemporaryBlindness
         component: TemporaryBlindness

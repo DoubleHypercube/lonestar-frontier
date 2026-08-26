@@ -1,5 +1,3 @@
-# Stimulants - Synthetic
-
 - type: reagent
   id: Dynamoxine
   name: reagent-name-dynamoxine
@@ -20,7 +18,7 @@
       - !type:HealthChange
         conditions:
           - !type:ReagentThreshold
-            min: 6.1 # Careful.
+            min: 6.1
         damage:
           types:
             Bloodloss: 5
@@ -29,7 +27,7 @@
       - !type:HealthChange
         conditions:
           - !type:ReagentThreshold
-            reagent: Epinephrine # DO NOT USE A FUCKING EPEN
+            reagent: Epinephrine
             min: 1
         damage:
           types:
@@ -39,7 +37,7 @@
       - !type:AdjustReagent
         conditions:
         - !type:ReagentThreshold
-          reagent: Epinephrine # God help you if you mix these two.
+          reagent: Epinephrine
           min: 1
         reagent: Dynamoxine
         amount: 0.5
@@ -79,7 +77,7 @@
         conditions:
         - !type:ReagentThreshold
           reagent: Addictine
-          max: 8 # maximum addiction severity for this reagent
+          max: 8
         reagent: Addictine
         amount: 0.1
       - !type:Jitter
@@ -89,9 +87,9 @@
       - !type:ModifyBleedAmount
         amount: -0.5
       - !type:GenericStatusEffect
-        key: Adrenaline # combat stim
+        key: Adrenaline
         component: IgnoreSlowOnDamage
-        time: 3 # slightly worse then Epi
+        time: 3
     Medicine:
       metabolismRate: 1.0
       effects:
@@ -109,12 +107,6 @@
               Burn: -0.4
               Brute: -0.4
 
-# Organic
-
-# Mindleaf / Raw form
-# Cannot be metabolizes, can be ground into Breakout, which can be processed into Rust and Bake using other chemicals
-# Sap is used to make Stray / Tea
-
 - type: reagent
   id: MindleafSap
   name: reagent-name-mindleafsap
@@ -131,14 +123,12 @@
   metabolisms:
     Poison:
       effects:
-      # - !type:ChemRerollPsionic
-      #   bonusMultiplier: 1.2
       - !type:HealthChange
         damage:
           types:
             Poison: 2
       - !type:GenericStatusEffect
-        key: SeeingRainbows # why do you think its toxic?
+        key: SeeingRainbows
         component: SeeingRainbows
         type: Add
         time: 2
@@ -146,12 +136,7 @@
         conditions:
         - !type:ReagentThreshold
           min: 1
-        probability: 0.75 # You -WILL- vomit, makes for a good natural alternative to Ipecac though.
-
-# Stray / Tea form
-# Tea bag can be crafted by hand, add to water 1-1 to create a soothing tea
-# Makes you feel at ease, numbs minor pain and keeps you awake. Metabolizes slowly
-# Relatively safe, no OD limit and has minor addiction risk, 40u?
+        probability: 0.75
 
 - type: reagent
   id: MindleafTea
@@ -159,7 +144,7 @@
   parent: BaseDrink
   desc: reagent-desc-stray
   physicalDesc: reagent-physical-desc-exotic-smelling
-  flavor: spicy #   w h y  i s  i t  s p i c y ?
+  flavor: spicy
   color: "#8E4E00"
   recognizable: true
   metabolisms:
@@ -167,10 +152,8 @@
       effects:
       - !type:SatiateThirst
         factor: 2
-      # - !type:ChemRerollPsionic
-      #   bonusMultiplier: 1.4
     Medicine:
-      metabolismRate : 0.04 # Technically a narcotic, it takes a while for the body to process the toxins.
+      metabolismRate : 0.04
       effects:
       - !type:PopupMessage
         type: Local
@@ -187,14 +170,14 @@
         probability: 0.1
       - !type:GenericStatusEffect
         key: SeeingRainbows
-        component: SeeingRainbows # More processed, less toxic form of the sap, still a drug
+        component: SeeingRainbows
         type: Add
         time: 4
       - !type:AdjustReagent
         conditions:
         - !type:ReagentThreshold
           reagent: Addictine
-          max: 2 # maximum addiction severity for this reagent
+          max: 2
         - !type:ReagentThreshold
           min: 40
         reagent: Addictine
@@ -205,13 +188,6 @@
   metamorphicMaxFillLevels: 4
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
-
-# Breakout / Coarse Powder form
-# Direct process from grinding Mindleaf, can be crafted into more potent drugs
-# Extremely dangerous form, better off used to create Rust and Bake
-# 15u OD, causes jittering and seizures, causes caustic damage to kidneys and liver above 5u, 
-# User feels invincable while high, metabolizes into Polytrinic Acid at high doses
-# Worst addiction risk of all Mindleaf types
 
 - type: reagent
   id: Breakout
@@ -235,8 +211,6 @@
         damage:
           types:
             Caustic: 0.1
-      # - !type:ChemRerollPsionic
-      #   bonusMultiplier: 2
       - !type:PopupMessage
         type: Local
         visualType: LargeCaution
@@ -252,7 +226,7 @@
         - !type:ReagentThreshold
           min: 0.1
       - !type:Emote
-        emote: Scream # makes you screna sometimes
+        emote: Scream
         showInChat: true
         probability: 0.05
         conditions:
@@ -272,24 +246,15 @@
         conditions:
         - !type:ReagentThreshold
           reagent: Addictine
-          max: 30 # maximum addiction severity for this reagent
+          max: 30
         - !type:ReagentThreshold
           min: 2
         reagent: Addictine
         amount: 4
       - !type:GenericStatusEffect
-        key: Adrenaline # I'M FUCKIN' INVINCIBLE!
+        key: Adrenaline
         component: IgnoreSlowOnDamage
         time: 1
-
-# Refined Organic
-
-# Rust / Smokable form
-# Made from Breakout, Tranexamic Acid and Hydroxide at high temperature
-# Highly dangerous, metabolizes rapidly into Histamine at high doses
-# Blocks most pain, makes the user feel highly motivated 
-# OD causes mass expulsion of stomach contents
-# Second worse addiction risk of all Mindleaf types
 
 - type: reagent
   id: Rust
@@ -303,8 +268,6 @@
     Poison:
       metabolismRate: 0.1
       effects:
-      # - !type:ChemRerollPsionic
-      #   bonusMultiplier: 2.5
       - !type:MovespeedModifier
         walkSpeedModifier: 1.05
         sprintSpeedModifier: 1.05
@@ -338,7 +301,7 @@
         conditions:
         - !type:ReagentThreshold
           reagent: Addictine
-          max: 25 # maximum addiction severity for this reagent
+          max: 25
         - !type:ReagentThreshold
           min: 8
         reagent: Addictine
@@ -347,12 +310,6 @@
         key: Adrenaline
         component: IgnoreSlowOnDamage
         time: 1
-
-# Bake / Fine Powder form
-# Further refined from Rust using Ultravasculine and Diphenylmethylamine with a catalyst of Sigynate
-# Decently safe OD risk, addiction occurs first. High doses attacks the lungs and kidneys directly.
-# User moves slightly faster, acts as surgical anesthetic, 
-# !!!EXTREMELY VALUABLE TO SELL!!!
 
 - type: reagent
   id: Bake
@@ -366,8 +323,6 @@
     Medicine:
       metabolismRate : 0.1
       effects:
-      # - !type:ChemRerollPsionic
-      #   bonusMultiplier: 4
       - !type:PopupMessage
         type: Local
         visualType: Large
@@ -394,7 +349,7 @@
         conditions:
         - !type:ReagentThreshold
           reagent: Addictine
-          max: 25 # maximum addiction severity for this reagent
+          max: 25
         - !type:ReagentThreshold
           min: 15
         reagent: Addictine
@@ -403,12 +358,6 @@
         key: Adrenaline
         component: IgnoreSlowOnDamage
         time: 1
-
-# Grit / Injector fluid form
-# 'Amps you up' makes you aggressive, dulls pain. Makes you feel 'REALLY FUCKIN' GOOD MAN!!'
-# Adrenaline, Speed, jitters, poison damage
-# Do not mix with other forms of Mindleaf, causes Grit to metabolize into Lexorin and metabolizes blood
-# Combine with Bake and Desoxyephedrine with Psicodine as a catalyst
 
 - type: reagent
   id: Grit
@@ -422,8 +371,6 @@
     Poison:
       metabolismRate: 0.5
       effects:
-      # - !type:ChemRerollPsionic
-      #   bonusMultiplier: 6
       - !type:HealthChange
         conditions:
           - !type:ReagentThreshold
@@ -446,10 +393,10 @@
             min: 20
         damage:
           types:
-            Poison: 20 # Don't fucking macrodose
+            Poison: 20
       - !type:MovespeedModifier
         walkSpeedModifier: 1.5
-        sprintSpeedModifier: 1.5 # Extremely fucking dangerous, extremely fucking fast.
+        sprintSpeedModifier: 1.5
       - !type:GenericStatusEffect
         key: Adrenaline
         component: IgnoreSlowOnDamage
@@ -500,11 +447,11 @@
         key: ForcedSleep
         time: 3
         type: Remove
-#      - !type:ChemVomit #HL
-#        conditions:
-#        - !type:ReagentThreshold
-#          min: 1
-#        probability: 0.1
+      - !type:ChemVomit
+        conditions:
+        - !type:ReagentThreshold
+          min: 1
+        probability: 0.1
       - !type:HealthChange
         conditions:
           - !type:ReagentThreshold
