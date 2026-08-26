@@ -57,6 +57,8 @@
     - LatticeCornerSW
     - LatticeHalfV
     - LatticeHalfH
+    - WallReinforced
+    - WallShuttle
   - type: Sprite
     sprite: _CS/Objects/Tools/rcd_pirate.rsi
     state: icon
@@ -109,26 +111,6 @@
     - PlatingSW
     - PlatingHalfV
     - PlatingHalfH
-    - PlatingWedgeN
-    - PlatingWedgeE
-    - PlatingWedgeS
-    - PlatingWedgeW
-    - PlatingHalfTiltNESLower
-    - PlatingHalfTiltSEWLower
-    - PlatingHalfTiltSWNLower
-    - PlatingHalfTiltNWELower
-    - PlatingHalfTiltNESUpper
-    - PlatingHalfTiltSEWUpper
-    - PlatingHalfTiltSWNUpper
-    - PlatingHalfTiltNWEUpper
-    - PlatingHalfTiltNEWLower
-    - PlatingHalfTiltSENLower
-    - PlatingHalfTiltSWELower
-    - PlatingHalfTiltNWSLower
-    - PlatingHalfTiltNEWUpper
-    - PlatingHalfTiltSENUpper
-    - PlatingHalfTiltSWEUpper
-    - PlatingHalfTiltNWSUpper
     - WindowDirectionalShuttle
     - WindowShuttle
     - WallSolidDiagonal
@@ -141,27 +123,8 @@
     - LatticeCornerSW
     - LatticeHalfV
     - LatticeHalfH
-    - LatticeWedgeN
-    - LatticeWedgeE
-    - LatticeWedgeS
-    - LatticeWedgeW
-    - LatticeHalfTiltNESLower
-    - LatticeHalfTiltSEWLower
-    - LatticeHalfTiltSWNLower
-    - LatticeHalfTiltNWELower
-    - LatticeHalfTiltNESUpper
-    - LatticeHalfTiltSEWUpper
-    - LatticeHalfTiltSWNUpper
-    - LatticeHalfTiltNWEUpper
-    - LatticeHalfTiltNEWLower
-    - LatticeHalfTiltSENLower
-    - LatticeHalfTiltSWELower
-    - LatticeHalfTiltNWSLower
-    - LatticeHalfTiltNEWUpper
-    - LatticeHalfTiltSENUpper
-    - LatticeHalfTiltSWEUpper
-    - LatticeHalfTiltNWSUpper
-  - type: Sprite
+    - WallReinforced
+    - WallShuttle
     sprite: _CS/Objects/Tools/rcd_nfsd.rsi
     state: icon
   - type: Clothing

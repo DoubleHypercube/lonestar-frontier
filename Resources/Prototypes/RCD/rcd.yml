@@ -273,3 +273,28 @@
   collisionMask: Impassable
   rotation: User
   fx: EffectRCDConstruct0
+
+- type: rcd
+  id: WallReinforced
+  category: Walls
+  sprite: /Textures/Interface/Radial/RCD/reinforced_wall.png
+  mode: ConstructObject
+  prototype: WallReinforced
+  cost: 4
+  delay: 2
+  collisionMask: FullTileMask
+  rotation: Fixed
+  fx: EffectRCDConstruct2
+
+
+- type: rcd
+  id: WallShuttle
+  category: Walls
+  sprite: /Textures/Interface/Radial/RCD/shuttle_wall.png
+  mode: ConstructObject
+  prototype: WallShuttle
+  cost: 4
+  delay: 2
+  collisionMask: FullTileMask
+  rotation: Fixed
+  fx: EffectRCDConstruct2

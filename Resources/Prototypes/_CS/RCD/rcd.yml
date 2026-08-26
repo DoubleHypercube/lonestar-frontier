@@ -2,7 +2,7 @@
 - type: rcd
   id: FloorWood
   name: rcd-component-floor-wood
-  category: WallsAndFlooring
+  category: Floors # Lonestar
   sprite: /Textures/Tiles/wood_tile.png
   mode: ConstructTile
   prototype: FloorWood
@@ -16,7 +16,7 @@
 #region Walls
 - type: rcd
   id: WallMining
-  category: WallsAndFlooring
+  category: Walls # Lonestar
   sprite: { sprite: Structures/Walls/mining.rsi, state: full }
   mode: ConstructObject
   prototype: WallMining
@@ -28,7 +28,7 @@
 
 - type: rcd
   id: WallMiningDiagonal
-  category: WallsAndFlooring
+  category: Walls # Lonestar
   sprite: { sprite: Structures/Walls/mining_diagonal.rsi, state: state0 }
   mode: ConstructObject
   prototype: WallMiningDiagonal
@@ -41,7 +41,7 @@
 
 - type: rcd
   id: WallPlastitanium
-  category: WallsAndFlooring
+  category: Walls # Lonestar
   sprite: { sprite: Structures/Walls/plastitanium.rsi, state: full }
   mode: ConstructObject
   prototype: WallPlastitanium
@@ -53,7 +53,7 @@
 
 - type: rcd
   id: WallPlastitaniumDiagonal
-  category: WallsAndFlooring
+  category: Walls # Lonestar
   sprite: { sprite: Structures/Walls/plastitanium_diagonal.rsi, state: state0 }
   mode: ConstructObject
   prototype: WallPlastitaniumDiagonal

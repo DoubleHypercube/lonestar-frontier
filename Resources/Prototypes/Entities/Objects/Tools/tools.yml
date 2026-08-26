@@ -337,6 +337,8 @@
     - LatticeCornerSW
     - LatticeHalfV
     - LatticeHalfH
+    - WallReinforced
+    - WallShuttle
     # Hardlight/Mono end
   - type: LimitedCharges
     maxCharges: 30
