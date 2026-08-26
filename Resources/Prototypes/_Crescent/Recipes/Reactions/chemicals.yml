@@ -52,9 +52,7 @@
   reactants:
     Ephedrine:
       amount: 2
-    Benzene:
-      amount: 1
-    Hydroxide:
+    Phenol:
       amount: 1
   products:
     Exile: 3
