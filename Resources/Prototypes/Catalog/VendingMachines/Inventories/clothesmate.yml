@@ -248,15 +248,6 @@
     ClothingUniformJumpsuitTacticool: 4294967295
     ClothingUniformJumpskirtTacticool: 4294967295
     ClothingBackpackSatchelRed: 4294967295
-    ClothingUniformJumpsuitCentcomAgent: 4294967295 # Lonestar start [
-    ClothingUniformJumpsuitCentcomFormal: 4294967295
-    ClothingUniformJumpskirtCentcomFormalDress: 4294967295
-    ClothingUniformJumpsuitCentcomOfficer: 4294967295
-    ClothingUniformJumpsuitCentcomOfficial: 4294967295
-    ClothingUniformJumpskirtCentcomOfficial: 4294967295
-    ClothingUniformJumpskirtCentcomOfficer: 4294967295
-    ClothingUniformJumpskirtPencilCentcomOfficial: 4294967295
-    ClothingUniformJumpskirtPencilSpecialOperationsOfficer: 4294967295 # Lonestar end ]
     ToyFigurinePassenger: 1
     ToyFigurineGreytider: 1
     # ClothingBackpackSatchelSmugglerUnanchored: 1 # Frontier
