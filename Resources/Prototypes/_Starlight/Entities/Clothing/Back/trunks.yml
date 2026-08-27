@@ -1,5 +1,5 @@
 - type: entity
-  parent: ClothingBackpack
+  parent: BaseItem
   id: ClothingBackpackTrunk
   name: storage trunk
   description: A huge storage trunk designed for vehicles. Too heavy to wear on your back, unfortunately.
