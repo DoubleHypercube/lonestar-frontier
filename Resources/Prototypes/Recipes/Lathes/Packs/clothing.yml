@@ -89,32 +89,32 @@
   recipes:
   - ClothingUniformJumpsuitDetective
   - ClothingUniformJumpskirtDetective
-  # - ClothingHeadHatBeretHoS # Frontier
-  # - ClothingHeadHatHoshat # Frontier
-  # - ClothingUniformJumpsuitHoS # Frontier
-  # - ClothingUniformJumpskirtHoS # Frontier
-  # - ClothingUniformJumpsuitHosFormal # Frontier
-  # - ClothingUniformJumpskirtHosFormal # Frontier
-  # - ClothingUniformJumpsuitHoSAlt # Frontier
-  # - ClothingUniformJumpskirtHoSAlt # Frontier
-  # - ClothingUniformJumpsuitHoSBlue # Frontier
-  # - ClothingUniformJumpsuitHoSGrey # Frontier
-  # - ClothingUniformJumpsuitHoSParadeMale # Frontier
-  # - ClothingUniformJumpskirtHoSParadeMale # Frontier
+  - ClothingHeadHatBeretHoS # Frontier ## Lonestar: It's clothing mang. Give us the drip.
+  - ClothingHeadHatHoshat # Frontier ## Lonestar: It's clothing mang. Give us the drip.
+  - ClothingUniformJumpsuitHoS # Frontier ## Lonestar: It's clothing mang. Give us the drip.
+  - ClothingUniformJumpskirtHoS # Frontier ## Lonestar: It's clothing mang. Give us the drip.
+  - ClothingUniformJumpsuitHosFormal # Frontier ## Lonestar: It's clothing mang. Give us the drip.
+  - ClothingUniformJumpskirtHosFormal # Frontier ## Lonestar: It's clothing mang. Give us the drip.
+  - ClothingUniformJumpsuitHoSAlt # Frontier ## Lonestar: It's clothing mang. Give us the drip.
+  - ClothingUniformJumpskirtHoSAlt # Frontier ## Lonestar: It's clothing mang. Give us the drip.
+  - ClothingUniformJumpsuitHoSBlue # Frontier ## Lonestar: It's clothing mang. Give us the drip.
+  - ClothingUniformJumpsuitHoSGrey # Frontier ## Lonestar: It's clothing mang. Give us the drip.
+  - ClothingUniformJumpsuitHoSParadeMale # Frontier ## Lonestar: It's clothing mang. Give us the drip.
+  - ClothingUniformJumpskirtHoSParadeMale # Frontier ## Lonestar: It's clothing mang. Give us the drip.
   - ClothingUniformJumpsuitSeniorOfficer
   - ClothingUniformJumpskirtSeniorOfficer
   - ClothingUniformJumpsuitPrisoner
   - ClothingUniformJumpskirtPrisoner
-  # - ClothingHeadHatBeretSecurity # Frontier
-  # - ClothingUniformJumpsuitSec # Frontier
-  # - ClothingUniformJumpskirtSec # Frontier
-  # - ClothingHeadHatBeretBrigmedic # Frontier
-  # - ClothingUniformJumpsuitBrigmedic # Frontier
-  # - ClothingUniformJumpskirtBrigmedic # Frontier
-  # - ClothingHeadHatBeretWarden # Frontier
-  # - ClothingHeadHatWarden # Frontier
-  # - ClothingUniformJumpsuitWarden # Frontier
-  # - ClothingUniformJumpskirtWarden # Frontier
+  - ClothingHeadHatBeretSecurity # Frontier ## Lonestar: It's clothing mang. Give us the drip.
+  - ClothingUniformJumpsuitSec # Frontier ## Lonestar: It's clothing mang. Give us the drip.
+  - ClothingUniformJumpskirtSec # Frontier ## Lonestar: It's clothing mang. Give us the drip.
+  - ClothingHeadHatBeretBrigmedic # Frontier ## Lonestar: It's clothing mang. Give us the drip.
+  - ClothingUniformJumpsuitBrigmedic # Frontier ## Lonestar: It's clothing mang. Give us the drip.
+  - ClothingUniformJumpskirtBrigmedic # Frontier ## Lonestar: It's clothing mang. Give us the drip.
+  - ClothingHeadHatBeretWarden # Frontier ## Lonestar: It's clothing mang. Give us the drip.
+  - ClothingHeadHatWarden # Frontier ## Lonestar: It's clothing mang. Give us the drip.
+  - ClothingUniformJumpsuitWarden # Frontier ## Lonestar: It's clothing mang. Give us the drip.
+  - ClothingUniformJumpskirtWarden # Frontier ## Lonestar: It's clothing mang. Give us the drip.
   - ClothingUniformJumpsuitPrivateSec # Frontier
   - ClothingUniformJumpskirtPrivateSec # Frontier
 
@@ -154,8 +154,8 @@
   - ClothingOuterWinterCE
   - ClothingOuterWinterCMO
   - ClothingOuterWinterHoP
-  # - ClothingOuterWinterHoSUnarmored # Frontier
-  # - ClothingOuterWinterWardenUnarmored # Frontier
+  - ClothingOuterWinterHoSUnarmored # Frontier ## Lonestar: It's clothing mang. Give us the drip.
+  - ClothingOuterWinterWardenUnarmored # Frontier ## Lonestar: It's clothing mang. Give us the drip.
   - ClothingOuterWinterQM
   - ClothingOuterWinterRD
   - ClothingOuterWinterMusician
@@ -177,7 +177,7 @@
   - ClothingOuterWinterViro
   - ClothingOuterWinterSci
   - ClothingOuterWinterRobo
-  # - ClothingOuterWinterSec # Frontier
+  - ClothingOuterWinterSec # Frontier ## Lonestar: It's clothing mang. Give us the drip.
   - ClothingOuterWinterCoatMail # Frontier
 
 - type: latheRecipePack
@@ -239,7 +239,7 @@
   - ClothingUniformJumpsuitPyjamaSyndicatePink
   - ClothingHeadPyjamaSyndicateRed
   - ClothingUniformJumpsuitPyjamaSyndicateRed
-  # - ClothingOuterWinterCentcom # Frontier
+  - ClothingOuterWinterCentcom # Frontier ## Lonestar: It's clothing mang. Give us the drip.
   - ClothingOuterWinterSyndie
   - ClothingOuterWinterSyndieCap
   - BedsheetSyndie
