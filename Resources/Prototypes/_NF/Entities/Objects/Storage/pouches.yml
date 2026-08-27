@@ -706,7 +706,7 @@
   - type: Storage # LS: 3x3, fits seeds and bottles/vials
     maxItemSize: Tiny
     grid:
-    - 0,0,3,3
+    - 0,0,2,2
     whitelist:
       tags: # intended for robust, dieth, etc
         - CentrifugeCompatible
