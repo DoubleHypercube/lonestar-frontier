@@ -125,6 +125,7 @@
     - LatticeHalfH
     - WallReinforced
     - WallShuttle
+  - type: Sprite
     sprite: _CS/Objects/Tools/rcd_nfsd.rsi
     state: icon
   - type: Clothing
