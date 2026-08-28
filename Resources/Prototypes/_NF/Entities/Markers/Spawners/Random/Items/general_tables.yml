@@ -261,7 +261,7 @@
     - id: HandheldStationMap
     - id: HandHeldMassScanner
     - id: HandheldCrewMonitor
-    - id: HandheldSecurityMonitor
+    # - id: HandheldSecurityMonitor # Lonestar: Haha what the fuck?
 
 # region Crates (Empty)
 - type: entityTable
