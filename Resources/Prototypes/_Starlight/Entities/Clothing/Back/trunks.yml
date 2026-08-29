@@ -5,6 +5,7 @@
   description: A huge storage trunk designed for vehicles. Too heavy to wear on your back, unfortunately.
   components:
   - type: Item
+    sprite: _Starlight/Clothing/Back/Trunks/mailtrunk.rsi
     size: Huge
   - type: Storage
     maxItemSize: Huge
@@ -29,6 +30,8 @@
   name: mail trunk
   description: A large trunk designed for heavy duty mail transport.
   components:
+  - type: Item
+    sprite: _Starlight/Clothing/Back/Trunks/mailseniortrunk.rsi
   - type: Sprite
     sprite: _Starlight/Clothing/Back/Trunks/mailseniortrunk.rsi
 
@@ -38,6 +41,8 @@
   name: syndicate storage trunk
   description: Huge, metal, reflective, and stylish. All the other syndicates will want to get their hands on this trunk.
   components:
+  - type: Item
+    sprite: _Starlight/Clothing/Back/Trunks/syndicate.rsi
   - type: Sprite
     sprite: _Starlight/Clothing/Back/Trunks/syndicate.rsi
   - type: ExplosionResistance
@@ -62,6 +67,8 @@
   name: space courier trunk
   description: A huge trunk themed after a legendary space courier.
   components:
+  - type: Item
+    sprite: _Starlight/Clothing/Back/Trunks/space_courier_trunk.rsi
   - type: Sprite
     sprite: _Starlight/Clothing/Back/Trunks/space_courier_trunk.rsi
 
