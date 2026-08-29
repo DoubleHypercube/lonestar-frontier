@@ -2,27 +2,29 @@
   parent: BaseItem
   id: ClothingBackpackTrunk
   name: storage trunk
-  description: A huge storage trunk designed for vehicles. Too heavy to wear on your back, unfortunately.
+  description: A huge storage trunk for vehicles. Too heavy to wear on your back, unfortunately.
   components:
-  - type: Item
-    sprite: _Starlight/Clothing/Back/Trunks/mailtrunk.rsi
-    size: Huge
   - type: Storage
     maxItemSize: Huge
     grid:
     - 0,0,10,5
-  - type: ClothingSpeedModifier
-    walkModifier: 0.7
-    sprintModifier: 0.7
+  - type: Sprite
+    sprite: _Starlight/Clothing/Back/Trunks/mailtrunk.rsi
+    state: icon
   - type: MeleeWeapon
     damage:
       types:
         Blunt: 9
     soundHit:
       collection: MetalThud
-  - type: HeldSpeedModifier
-  - type: Sprite
-    sprite: _Starlight/Clothing/Back/Trunks/mailtrunk.rsi
+  - type: ContainerContainer # we really need a BaseStorageItem
+    containers:
+      storagebase: !type:Container
+        ents: []
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
 
 - type: entity
   parent: ClothingBackpackTrunk
@@ -30,8 +32,6 @@
   name: mail trunk
   description: A large trunk designed for heavy duty mail transport.
   components:
-  - type: Item
-    sprite: _Starlight/Clothing/Back/Trunks/mailseniortrunk.rsi
   - type: Sprite
     sprite: _Starlight/Clothing/Back/Trunks/mailseniortrunk.rsi
 
@@ -41,8 +41,6 @@
   name: syndicate storage trunk
   description: Huge, metal, reflective, and stylish. All the other syndicates will want to get their hands on this trunk.
   components:
-  - type: Item
-    sprite: _Starlight/Clothing/Back/Trunks/syndicate.rsi
   - type: Sprite
     sprite: _Starlight/Clothing/Back/Trunks/syndicate.rsi
   - type: ExplosionResistance
@@ -57,7 +55,7 @@
     soundHit:
       collection: MetalThud
   - type: Reflect # It's a metal trunk
-    reflectProb: 0.2
+    reflectProb: 0.45 # Lonestar: Increased due to not being wearable
     reflects:
       - Energy
 
@@ -67,8 +65,6 @@
   name: space courier trunk
   description: A huge trunk themed after a legendary space courier.
   components:
-  - type: Item
-    sprite: _Starlight/Clothing/Back/Trunks/space_courier_trunk.rsi
   - type: Sprite
     sprite: _Starlight/Clothing/Back/Trunks/space_courier_trunk.rsi
 
