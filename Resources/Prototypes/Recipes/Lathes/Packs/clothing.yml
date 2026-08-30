@@ -89,32 +89,32 @@
   recipes:
   - ClothingUniformJumpsuitDetective
   - ClothingUniformJumpskirtDetective
-  - ClothingHeadHatBeretHoS # Frontier ## Lonestar: It's clothing mang. Give us the drip.
-  - ClothingHeadHatHoshat # Frontier ## Lonestar: It's clothing mang. Give us the drip.
-  - ClothingUniformJumpsuitHoS # Frontier ## Lonestar: It's clothing mang. Give us the drip.
-  - ClothingUniformJumpskirtHoS # Frontier ## Lonestar: It's clothing mang. Give us the drip.
-  - ClothingUniformJumpsuitHosFormal # Frontier ## Lonestar: It's clothing mang. Give us the drip.
-  - ClothingUniformJumpskirtHosFormal # Frontier ## Lonestar: It's clothing mang. Give us the drip.
-  - ClothingUniformJumpsuitHoSAlt # Frontier ## Lonestar: It's clothing mang. Give us the drip.
-  - ClothingUniformJumpskirtHoSAlt # Frontier ## Lonestar: It's clothing mang. Give us the drip.
-  - ClothingUniformJumpsuitHoSBlue # Frontier ## Lonestar: It's clothing mang. Give us the drip.
-  - ClothingUniformJumpsuitHoSGrey # Frontier ## Lonestar: It's clothing mang. Give us the drip.
-  - ClothingUniformJumpsuitHoSParadeMale # Frontier ## Lonestar: It's clothing mang. Give us the drip.
-  - ClothingUniformJumpskirtHoSParadeMale # Frontier ## Lonestar: It's clothing mang. Give us the drip.
+  - ClothingHeadHatBeretHoS # Lonestar: Reenabled
+  - ClothingHeadHatHoshat # Lonestar: Reenabled
+  - ClothingUniformJumpsuitHoS # Lonestar: Reenabled
+  - ClothingUniformJumpskirtHoS # Lonestar: Reenabled
+  - ClothingUniformJumpsuitHosFormal # Lonestar: Reenabled
+  - ClothingUniformJumpskirtHosFormal # Lonestar: Reenabled
+  - ClothingUniformJumpsuitHoSAlt # Lonestar: Reenabled
+  - ClothingUniformJumpskirtHoSAlt # Lonestar: Reenabled
+  - ClothingUniformJumpsuitHoSBlue # Lonestar: Reenabled
+  - ClothingUniformJumpsuitHoSGrey # Lonestar: Reenabled
+  - ClothingUniformJumpsuitHoSParadeMale # Lonestar: Reenabled
+  - ClothingUniformJumpskirtHoSParadeMale # Lonestar: Reenabled
   - ClothingUniformJumpsuitSeniorOfficer
   - ClothingUniformJumpskirtSeniorOfficer
   - ClothingUniformJumpsuitPrisoner
   - ClothingUniformJumpskirtPrisoner
-  - ClothingHeadHatBeretSecurity # Frontier ## Lonestar: It's clothing mang. Give us the drip.
-  - ClothingUniformJumpsuitSec # Frontier ## Lonestar: It's clothing mang. Give us the drip.
-  - ClothingUniformJumpskirtSec # Frontier ## Lonestar: It's clothing mang. Give us the drip.
-  - ClothingHeadHatBeretBrigmedic # Frontier ## Lonestar: It's clothing mang. Give us the drip.
-  - ClothingUniformJumpsuitBrigmedic # Frontier ## Lonestar: It's clothing mang. Give us the drip.
-  - ClothingUniformJumpskirtBrigmedic # Frontier ## Lonestar: It's clothing mang. Give us the drip.
-  - ClothingHeadHatBeretWarden # Frontier ## Lonestar: It's clothing mang. Give us the drip.
-  - ClothingHeadHatWarden # Frontier ## Lonestar: It's clothing mang. Give us the drip.
-  - ClothingUniformJumpsuitWarden # Frontier ## Lonestar: It's clothing mang. Give us the drip.
-  - ClothingUniformJumpskirtWarden # Frontier ## Lonestar: It's clothing mang. Give us the drip.
+  - ClothingHeadHatBeretSecurity # Lonestar: Reenabled
+  - ClothingUniformJumpsuitSec # Lonestar: Reenabled
+  - ClothingUniformJumpskirtSec # Lonestar: Reenabled
+  - ClothingHeadHatBeretBrigmedic # Lonestar: Reenabled
+  - ClothingUniformJumpsuitBrigmedic # Lonestar: Reenabled
+  - ClothingUniformJumpskirtBrigmedic # Lonestar: Reenabled
+  - ClothingHeadHatBeretWarden # Lonestar: Reenabled
+  - ClothingHeadHatWarden # Lonestar: Reenabled
+  - ClothingUniformJumpsuitWarden # Lonestar: Reenabled
+  - ClothingUniformJumpskirtWarden # Lonestar: Reenabled
   - ClothingUniformJumpsuitPrivateSec # Frontier
   - ClothingUniformJumpskirtPrivateSec # Frontier
 
@@ -154,8 +154,8 @@
   - ClothingOuterWinterCE
   - ClothingOuterWinterCMO
   - ClothingOuterWinterHoP
-  - ClothingOuterWinterHoSUnarmored # Frontier ## Lonestar: It's clothing mang. Give us the drip.
-  - ClothingOuterWinterWardenUnarmored # Frontier ## Lonestar: It's clothing mang. Give us the drip.
+  - ClothingOuterWinterHoSUnarmored # Lonestar: Reenabled
+  - ClothingOuterWinterWardenUnarmored # Lonestar: Reenabled
   - ClothingOuterWinterQM
   - ClothingOuterWinterRD
   - ClothingOuterWinterMusician
@@ -177,7 +177,7 @@
   - ClothingOuterWinterViro
   - ClothingOuterWinterSci
   - ClothingOuterWinterRobo
-  - ClothingOuterWinterSec # Frontier ## Lonestar: It's clothing mang. Give us the drip.
+  - ClothingOuterWinterSec # Lonestar: Reenabled
   - ClothingOuterWinterCoatMail # Frontier
 
 - type: latheRecipePack
@@ -239,7 +239,7 @@
   - ClothingUniformJumpsuitPyjamaSyndicatePink
   - ClothingHeadPyjamaSyndicateRed
   - ClothingUniformJumpsuitPyjamaSyndicateRed
-  - ClothingOuterWinterCentcom # Frontier ## Lonestar: It's clothing mang. Give us the drip.
+  - ClothingOuterWinterCentcom # Lonestar: Reenabled
   - ClothingOuterWinterSyndie
   - ClothingOuterWinterSyndieCap
   - BedsheetSyndie
