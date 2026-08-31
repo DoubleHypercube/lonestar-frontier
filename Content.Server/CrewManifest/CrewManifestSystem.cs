@@ -15,6 +15,7 @@ using Content.Shared.GameTicking;
 using Content.Shared.Roles;
 using Content.Shared.SSDIndicator; // Coyote
 using Content.Shared.StationRecords;
+using Content.Shared.StatusIcon;
 using Robust.Shared.Configuration;
 using Robust.Shared.Console;
 using Robust.Shared.Player;
@@ -231,29 +232,23 @@ public sealed class CrewManifestSystem : EntitySystem
 
         while (sensors.MoveNext(out var uid, out var sensor)) // Coyote
         {
-            if (sensor.User == null ||
-                (TryComp<SSDIndicatorComponent>(sensor.User, out var indicator) && indicator.IsSSD))
-            {
+            if (sensor.User == null || TryComp<SSDIndicatorComponent>(sensor.User, out var indicator) && indicator.IsSSD)
                 continue;
-            }
 
             var name = Loc.GetString("suit-sensor-component-unknown-name");
-            var jobTitle = Loc.GetString("suit-sensor-component-unknown-job");
+            var title = Loc.GetString("suit-sensor-component-unknown-job");
+            ProtoId<JobPrototype> job = "Passenger";
+            ProtoId<JobIconPrototype> icon = "JobIconUnknown";
 
-            if (!_idCardSystem.TryFindIdCard(sensor.User.Value, out var card))
-                continue;
+            if (_idCardSystem.TryFindIdCard(sensor.User.Value, out var card))
+            {
+                name = card.Comp.FullName ?? name;
+                title = card.Comp.LocalizedJobTitle ?? title;
+                if (TryComp<PresetIdCardComponent>(card, out var preset))
+                    job = preset.JobName ?? job;
+            }
 
-            if (card.Comp.FullName != null)
-                name = card.Comp.FullName;
-
-            if (card.Comp.LocalizedJobTitle != null)
-                jobTitle = card.Comp.LocalizedJobTitle;
-
-            if (!TryComp<PresetIdCardComponent>(card, out var preset))
-                continue;
-
-            var entry = new CrewManifestEntry(name, jobTitle, card.Comp.JobIcon, preset.JobName!.Value);
-
+            var entry = new CrewManifestEntry(name, title, icon, job);
             entriesSort.Add((null, entry));
         } // Coyote End
 
