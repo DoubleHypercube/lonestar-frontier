@@ -9,6 +9,8 @@ namespace Content.Client.CartridgeLoader.Cartridges;
 [GenerateTypedNameReferences]
 public sealed partial class CrewManifestUiFragment : BoxContainer
 {
+    [Dependency] private readonly SharedCrewManifestSystem _manifest = IoCManager.Resolve<IEntityManager>().System<SharedCrewManifestSystem>();
+
     public CrewManifestUiFragment()
     {
         RobustXamlLoader.Load(this);
@@ -27,9 +29,7 @@ public sealed partial class CrewManifestUiFragment : BoxContainer
         StationNameContainer.Visible = entries != null;
         StationName.Text = "Crew Manifest"; // Coyote: remove name
 
-        if (entries == null)
-            return;
-
+        entries ??= _manifest.BuildCrewManifest();
         CrewManifestListing.AddCrewManifestEntries(entries);
     }
 }

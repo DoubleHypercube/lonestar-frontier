@@ -50,7 +50,6 @@ public sealed class CrewManifestSection : BoxContainer
             var title = new RichTextLabel();
             title.SetMessage(entry.JobTitle);
 
-
             if (prototypeManager.TryIndex<JobIconPrototype>(entry.JobIcon, out var jobIcon))
             {
                 var icon = new TextureRect()

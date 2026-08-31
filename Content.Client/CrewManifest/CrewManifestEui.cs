@@ -8,10 +8,14 @@ namespace Content.Client.CrewManifest;
 [UsedImplicitly]
 public sealed class CrewManifestEui : BaseEui
 {
+    [Dependency] private readonly SharedCrewManifestSystem _manifest = default!;
+
     private readonly CrewManifestUi _window;
 
     public CrewManifestEui()
     {
+        IoCManager.InjectDependencies(this);
+
         _window = new();
 
         _window.OnClose += () =>
@@ -40,9 +44,19 @@ public sealed class CrewManifestEui : BaseEui
 
         if (state is not CrewManifestEuiState cast)
         {
+            Logger.Info("State is invalid?!");
             return;
         }
 
-        _window.Populate(cast.Entries); // Coyote: Remove name
+        if (cast.Entries == null) Logger.Info($"We are rebuilding entries");
+        var entries = cast.Entries ?? _manifest.BuildCrewManifest();
+
+        Logger.Info($"We have {entries.Entries.Length} entries to handle");
+        foreach (var entry in entries.Entries)
+        {
+            Logger.Info($"{entry.Name} is a {entry.JobTitle} ({entry.JobPrototype} with icon {entry.JobIcon})");
+        }
+
+        _window.Populate(entries); // Coyote: Remove name
     }
 }

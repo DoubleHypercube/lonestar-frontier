@@ -9,6 +9,16 @@ namespace Content.Client.CrewManifest.UI;
 
 public sealed class CrewManifestListing : BoxContainer
 {
+    private readonly Dictionary<string, string> _replacements = new()
+    {
+        ["ChiefRanger"] = "Sheriff",
+        ["ChiefArmorer"] = "Bailiff",
+        ["SeniorRanger"] = "SeniorOfficer",
+        ["Corpsman"] = "Brigmedic",
+        ["Ranger"] = "Deputy",
+        ["JuniorRanger"] = "Cadet",
+    };
+
     [Dependency] private readonly IEntitySystemManager _entitySystem = default!;
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     private readonly SpriteSystem _spriteSystem;
@@ -19,31 +29,50 @@ public sealed class CrewManifestListing : BoxContainer
         _spriteSystem = _entitySystem.GetEntitySystem<SpriteSystem>();
     }
 
+    private bool FindDepartmentFromJob(string job, CrewManifestEntry entry, ref Dictionary<DepartmentPrototype, List<CrewManifestEntry>> entryDict)
+    {
+        foreach (var department in _prototypeManager.EnumeratePrototypes<DepartmentPrototype>())
+        {
+            if (!department.Roles.Contains(job))
+                continue;
+
+            entryDict.GetOrNew(department).Add(entry);
+            return true;
+        }
+
+        return false;
+    }
+
     public void AddCrewManifestEntries(CrewManifestEntries entries)
     {
         var entryDict = new Dictionary<DepartmentPrototype, List<CrewManifestEntry>>();
 
         foreach (var entry in entries.Entries)
         {
-            foreach (var department in _prototypeManager.EnumeratePrototypes<DepartmentPrototype>())
+            if (FindDepartmentFromJob(entry.JobPrototype, entry, ref entryDict))
+                continue;
+
+            var sanitized = entry.JobTitle.Replace(" ", "");
+            if (sanitized.StartsWith("NF"))
             {
-                // this is a little expensive, and could be better
-                if (department.Roles.Contains(entry.JobPrototype))
-                {
-                    entryDict.GetOrNew(department).Add(entry);
-                }
+                sanitized = sanitized[2..];
             }
+            if (_replacements.TryGetValue(sanitized, out var mapping))
+                sanitized = mapping;
+
+            if (FindDepartmentFromJob(sanitized, entry, ref entryDict))
+                continue;
+
+            FindDepartmentFromJob("Contractor", entry, ref entryDict);
         }
 
         var entryList = new List<(DepartmentPrototype section, List<CrewManifestEntry> entries)>();
-
         foreach (var (section, listing) in entryDict)
         {
             entryList.Add((section, listing));
         }
 
         entryList.Sort((a, b) => DepartmentUIComparer.Instance.Compare(a.section, b.section));
-
         foreach (var item in entryList)
         {
             AddChild(new CrewManifestSection(_prototypeManager, _spriteSystem, item.section, item.entries));
