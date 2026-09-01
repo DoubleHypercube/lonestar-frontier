@@ -34,7 +34,7 @@ public abstract partial class SharedCrewManifestSystem : EntitySystem
 
             var name = meta.EntityName;
             var title = Loc.GetString("suit-sensor-component-unknown-job");
-            ProtoId<JobPrototype> job = "Contractor";
+            ProtoId<JobPrototype> job = "thisJobDoesNotExist";
             ProtoId<JobIconPrototype> icon = "JobIconUnknown";
 
             if (_id.TryFindIdCard(uid, out var card))
