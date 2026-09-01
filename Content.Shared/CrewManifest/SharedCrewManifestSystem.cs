@@ -53,7 +53,6 @@ public abstract partial class SharedCrewManifestSystem : EntitySystem
 
         entriesSort.Sort((a, b) =>
         {
-            Log.Info($"Comparing job {a.job} against job {b.job}");
             var cmp = JobUIComparer.Instance.Compare(a.job, b.job);
             return cmp != 0 ? cmp : string.Compare(a.entry.Name, b.entry.Name, StringComparison.CurrentCultureIgnoreCase);
         });

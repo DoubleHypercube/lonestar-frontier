@@ -43,19 +43,9 @@ public sealed class CrewManifestEui : BaseEui
         base.HandleState(state);
 
         if (state is not CrewManifestEuiState cast)
-        {
-            Logger.Info("State is invalid?!");
             return;
-        }
 
-        if (cast.Entries == null) Logger.Info($"We are rebuilding entries");
         var entries = cast.Entries ?? _manifest.BuildCrewManifest();
-
-        Logger.Info($"We have {entries.Entries.Length} entries to handle");
-        foreach (var entry in entries.Entries)
-        {
-            Logger.Info($"{entry.Name} is a {entry.JobTitle} ({entry.JobPrototype} with icon {entry.JobIcon})");
-        }
 
         _window.Populate(entries); // Coyote: Remove name
     }
