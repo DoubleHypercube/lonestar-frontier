@@ -17,6 +17,9 @@ public sealed class CrewManifestListing : BoxContainer
         ["Corpsman"] = "Brigmedic",
         ["Ranger"] = "Deputy",
         ["JuniorRanger"] = "Cadet",
+        ["Detective"] = "NFDetective",
+        ["Janitor"] = "NFJanitor",
+        ["Freelancer"] = "NFPirate",
     };
 
     [Dependency] private readonly IEntitySystemManager _entitySystem = default!;
@@ -52,11 +55,7 @@ public sealed class CrewManifestListing : BoxContainer
             if (FindDepartmentFromJob(entry.JobPrototype, entry, ref entryDict))
                 continue;
 
-            var sanitized = entry.JobTitle.Replace(" ", "");
-            if (sanitized.StartsWith("NF"))
-            {
-                sanitized = sanitized[2..];
-            }
+            var sanitized = entry.JobTitle.Replace(" ", "").Replace("of", "Of").Replace("Applicant", "Interview");
             if (_replacements.TryGetValue(sanitized, out var mapping))
                 sanitized = mapping;
 
