@@ -9,7 +9,7 @@ namespace Content.Client.CrewManifest.UI;
 
 public sealed class CrewManifestListing : BoxContainer
 {
-    private readonly Dictionary<string, string> _replacements = new()
+    private readonly Dictionary<string, string> _replacements = new() // Lonestar, used for replacements (IF YOU RENAME A JOB UPDATE THIS!!)
     {
         ["ChiefRanger"] = "Sheriff",
         ["ChiefArmorer"] = "Bailiff",
@@ -32,6 +32,7 @@ public sealed class CrewManifestListing : BoxContainer
         _spriteSystem = _entitySystem.GetEntitySystem<SpriteSystem>();
     }
 
+    // Lonestar: Moved the old logic from AddCrewManifestEntries into a repeat-callable method
     private bool FindDepartmentFromJob(string job, CrewManifestEntry entry, ref Dictionary<DepartmentPrototype, List<CrewManifestEntry>> entryDict)
     {
         foreach (var department in _prototypeManager.EnumeratePrototypes<DepartmentPrototype>())
@@ -46,10 +47,12 @@ public sealed class CrewManifestListing : BoxContainer
         return false;
     }
 
+
     public void AddCrewManifestEntries(CrewManifestEntries entries)
     {
         var entryDict = new Dictionary<DepartmentPrototype, List<CrewManifestEntry>>();
 
+        // Lonestar: Rewritten this to call FindDepartmentFromJob & apply substitutions
         foreach (var entry in entries.Entries)
         {
             if (FindDepartmentFromJob(entry.JobPrototype, entry, ref entryDict))

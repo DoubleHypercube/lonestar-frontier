@@ -8,13 +8,13 @@ namespace Content.Client.CrewManifest;
 [UsedImplicitly]
 public sealed class CrewManifestEui : BaseEui
 {
-    [Dependency] private readonly SharedCrewManifestSystem _manifest = default!;
+    [Dependency] private readonly SharedCrewManifestSystem _manifest = default!; // Lonestar
 
     private readonly CrewManifestUi _window;
 
     public CrewManifestEui()
     {
-        IoCManager.InjectDependencies(this);
+        IoCManager.InjectDependencies(this); // Lonestar
 
         _window = new();
 
@@ -45,8 +45,7 @@ public sealed class CrewManifestEui : BaseEui
         if (state is not CrewManifestEuiState cast)
             return;
 
-        var entries = cast.Entries ?? _manifest.BuildCrewManifest();
-
+        var entries = cast.Entries ?? _manifest.BuildCrewManifest(); // Lonestar
         _window.Populate(entries); // Coyote: Remove name
     }
 }

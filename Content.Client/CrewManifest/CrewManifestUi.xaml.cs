@@ -8,7 +8,7 @@ namespace Content.Client.CrewManifest;
 [GenerateTypedNameReferences]
 public sealed partial class CrewManifestUi : DefaultWindow
 {
-    [Dependency] private readonly SharedCrewManifestSystem _manifest = IoCManager.Resolve<IEntityManager>().System<SharedCrewManifestSystem>();
+    [Dependency] private readonly SharedCrewManifestSystem _manifest = IoCManager.Resolve<IEntityManager>().System<SharedCrewManifestSystem>(); // Lonestar
 
     public CrewManifestUi()
     {
@@ -25,7 +25,7 @@ public sealed partial class CrewManifestUi : DefaultWindow
         StationNameContainer.Visible = entries != null;
         StationName.Text = "Crew Manifest"; // Coyote: Remove name
 
-        entries ??= _manifest.BuildCrewManifest();
+        entries ??= _manifest.BuildCrewManifest(); // Lonestar
         CrewManifestListing.AddCrewManifestEntries(entries);
     }
 }
