@@ -12,7 +12,7 @@ public sealed class CrewManifestListing : BoxContainer
     private readonly Dictionary<string, string> _replacements = new() // Lonestar, used for replacements (IF YOU RENAME A JOB UPDATE THIS!!)
     {
         ["ChiefRanger"] = "Sheriff",
-        ["ChiefArmorer"] = "Bailiff",
+        ["Armorer"] = "Bailiff",
         ["SeniorRanger"] = "SeniorOfficer",
         ["Corpsman"] = "Brigmedic",
         ["Ranger"] = "Deputy",
