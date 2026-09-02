@@ -75,6 +75,7 @@ public sealed class CrewManifestListing : BoxContainer
         }
 
         entryList.Sort((a, b) => DepartmentUIComparer.Instance.Compare(a.section, b.section));
+
         foreach (var item in entryList)
         {
             AddChild(new CrewManifestSection(_prototypeManager, _spriteSystem, item.section, item.entries));
