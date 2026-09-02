@@ -49,7 +49,7 @@ public sealed class AphrodesiacBiteSystem : EntitySystem
 
         if (bite.RequiresConsent && !_consent.HasConsent(target, bite.ConsentToggleId))
         {
-            _popup.PopupEntity(Loc.GetString("aphrodesiac-no-consent", ("target", target)), user, PopupType.LargeCaution);
+            _popup.PopupEntity(Loc.GetString("aphrodesiac-no-consent", ("target", target)), user, user, PopupType.LargeCaution);
             return false;
         }
 
@@ -57,6 +57,8 @@ public sealed class AphrodesiacBiteSystem : EntitySystem
         if (_bloodstream.TryAddToChemicals(target, solution))
         {
             _audio.PlayPvs(bite.Sound, user);
+            _popup.PopupEntity(Loc.GetString("interaction-Bite-success-self-popup", ("target", target)), user, user);
+            _popup.PopupEntity(Loc.GetString("interaction-Bite-success-target-popup", ("user", user)), target, target);
             _actions.StartUseDelay(bite.ActionEntity);
             return true;
         }
