@@ -62,7 +62,7 @@
     ClothingUniformloinclothWhite: 4294967295
     ClothingOuterBeltedWear: 4294967295
     ClothingOuterTransparentOuterwear: 4294967295
-    ClothingShoesHighheelShoes: 4294967295 # Coyote
+    ClothingShoesHighheelShoes: 4294967295 # Starlight start
     ClothingUniformJumpskirtGothic: 4294967295
     ClothingUniformJumpskirtTango: 4294967295
     ClothingUniformJumpskirtVictorianBlack: 4294967295
@@ -146,13 +146,17 @@
     TogaUniformSuit: 4294967295
     VintageUniformSuit: 4294967295
     CargoOverallsUniformSuit: 4294967295
-    ClothingUniformJumpsuitRegalSuitBlack: 4294967295
-    ClothingUniformJumpsuitRegalGownBlack: 4294967295
-    ClothingHandsGlovesRegalSleeves: 4294967295
+    ClothingUniformJumpsuitRegalSuitBlack: 4294967295 # Lonestar start
+    ClothingUniformJumpsuitRegalGownPink: 4294967295
     ClothingHandsGlovesRegalSleevesBlack: 4294967295
+    ClothingHandsGlovesRegalSleevesPink: 4294967295
     ClothingHeadHatRegalCrown: 4294967295
     ClothingUniformJumpsuitRegalShirt: 4294967295
     ClothingOuterVestMedievalLongcoat: 4294967295
+    ClothingUniformJumpskirtCapFormalDress: 4294967295
+    ClothingUniformJumpsuitCapFormal: 4294967295
+    ClothingUniformJumpskirtHosFormal: 4294967295
+    ClothingUniformJumpsuitHosFormal: 4294967295 # Lonestar end
   contrabandInventory:
     ClothingMaskNeckGaiter: 4294967295
     ClothingUniformJumpsuitTacticool: 4294967295
