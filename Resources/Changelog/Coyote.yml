@@ -3639,3 +3639,58 @@ Entries:
   id: 405
   time: '2026-09-11T04:50:25.0000000+00:00'
   url: https://github.com/LoneStarSS14/lonestar-frontier/pull/126
+- author: DoubleHypercube
+  changes:
+    - type: Fix
+      message: Smart equip now works how you'd expect
+  id: 406
+  time: '2026-09-12T08:56:29.0000000+00:00'
+  url: https://github.com/LoneStarSS14/lonestar-frontier/pull/128
+- author: archee1
+  changes:
+    - type: Tweak
+      message: Poppies in the theatre drobe have been replaced with hair flowers.
+  id: 407
+  time: '2026-09-12T12:08:32.0000000+00:00'
+  url: https://github.com/LoneStarSS14/lonestar-frontier/pull/130
+- author: archee1
+  changes:
+    - type: Tweak
+      message: Flesh expeditions will now only spawn additional newborn flesh monsters.
+    - type: Remove
+      message: 10,000 zombies will no longer plague your vroids.
+    - type: Tweak
+      message: >-
+        Expedition objectives now have even more checks to keep the mobs spawned
+        in active locations.
+    - type: Fix
+      message: Expedition objectives can now be shot again
+    - type: Fix
+      message: The cultist UIV is no longer being counterassaulted by the syndicate.
+  id: 408
+  time: '2026-09-12T12:11:47.0000000+00:00'
+  url: https://github.com/LoneStarSS14/lonestar-frontier/pull/133
+- author: archee1
+  changes:
+    - type: Add
+      message: >-
+        A new collar module "pacifism" can now be found in the manager inventory
+        of the hawker.
+    - type: Add
+      message: 2 new Speech modes for the speech collar module, 'mew' and 'confused'
+    - type: Remove
+      message: (non-psychic) Clothing Lock modules have been removed.
+    - type: Tweak
+      message: Collar Speech modules now prevent the wearer changing their own mode.
+  id: 409
+  time: '2026-09-12T13:15:32.0000000+00:00'
+  url: https://github.com/LoneStarSS14/lonestar-frontier/pull/134
+- author: archee1
+  changes:
+    - type: Fix
+      message: >-
+        Wall substations now start with capacitors inside instead of
+        manipulators.
+  id: 410
+  time: '2026-09-12T13:41:06.0000000+00:00'
+  url: https://github.com/LoneStarSS14/lonestar-frontier/pull/132
