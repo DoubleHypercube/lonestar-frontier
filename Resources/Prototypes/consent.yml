@@ -43,10 +43,6 @@
   id: Transformation
   priority: 9
 
-- type: consentToggle
-  id: MindControl
-  priority: 10
-
 
 #- type: consentToggle
 #  id: Cum
