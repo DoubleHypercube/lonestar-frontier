@@ -62,9 +62,7 @@
   components:
   - type: StorageFill
     contents:
-    - id: OxygenTankFilled # Lonestar
-    - id: NitrogenTankFilled # Lonestar
-    # - id: NFTankO2N2EqualFilled # Lonestar: Kill
+    - id: NFTankO2N2EqualFilled
     - id: ClothingShoesBootsMag
     - id: ClothingOuterHardsuitEngineering
     - id: ClothingMaskBreath
@@ -79,9 +77,7 @@
   components:
   - type: StorageFill
     contents:
-    - id: OxygenTankFilled # Lonestar
-    - id: NitrogenTankFilled # Lonestar
-    # - id: NFTankO2N2EqualFilled # Lonestar: Kill
+    - id: NFTankO2N2EqualFilled
     - id: ClothingShoesBootsMag
     - id: ClothingOuterHardsuitAtmos
     - id: ClothingMaskBreath
@@ -96,9 +92,7 @@
   components:
   - type: StorageFill
     contents:
-    - id: OxygenTankFilled # Lonestar
-    - id: NitrogenTankFilled # Lonestar
-    # - id: NFTankO2N2EqualFilled # Lonestar: Kill
+    - id: NFTankO2N2EqualFilled
     - id: ClothingShoesBootsMag
     - id: ClothingOuterHardsuitEngineeringWhite
     - id: ClothingMaskBreath
@@ -362,9 +356,7 @@
   components:
   - type: StorageFill
     contents:
-    - id: OxygenTankFilled # Lonestar
-    - id: NitrogenTankFilled # Lonestar
-    # - id: NFTankO2N2EqualFilled # Lonestar: Kill
+    - id: NFTankO2N2EqualFilled
     - id: ClothingOuterHardsuitVoidParamed
     - id: ClothingMaskBreathMedical
     - id: JetpackMiniFilled
@@ -378,9 +370,7 @@
   components:
   - type: StorageFill
     contents:
-    - id: OxygenTankFilled # Lonestar
-    - id: NitrogenTankFilled # Lonestar
-    # - id: NFTankO2N2EqualFilled # Lonestar: Kill
+    - id: NFTankO2N2EqualFilled
     - id: ClothingOuterHardsuitMedical
     - id: ClothingMaskBreathMedical
     - id: JetpackMiniFilled
@@ -395,9 +385,7 @@
   components:
   - type: StorageFill
     contents:
-    - id: DoubleEmergencyOxygenTankFilled # Lonestar
-    - id: DoubleEmergencyNitrogenTankFilled # Lonestar
-    # - id: DoubleEmergencyTankO2N2EqualFilled # Lonestar: Kill
+    - id: DoubleEmergencyTankO2N2EqualFilled
     - id: ClothingShoesBootsMagMercenary
     - id: ClothingOuterHardsuitMercenary
     - id: ClothingMaskGasMercenary
@@ -412,9 +400,7 @@
   components:
   - type: StorageFill
     contents:
-    - id: DoubleEmergencyOxygenTankFilled # Lonestar
-    - id: DoubleEmergencyNitrogenTankFilled # Lonestar
-    # - id: DoubleEmergencyTankO2N2EqualFilled # Lonestar: Kill
+    - id: DoubleEmergencyTankO2N2EqualFilled
     - id: ClothingShoesBootsMagSecurity
     - id: ClothingOuterHardsuitPrivateSecurity
     - id: ClothingMaskGasSecurity
@@ -429,9 +415,7 @@
   components:
   - type: StorageFill
     contents:
-    - id: DoubleEmergencyOxygenTankFilled # Lonestar
-    - id: DoubleEmergencyNitrogenTankFilled # Lonestar
-    # - id: DoubleEmergencyTankO2N2EqualFilled # Lonestar: Kill
+    - id: DoubleEmergencyTankO2N2EqualFilled
     - id: ClothingOuterHardsuitMercenary
     - id: ClothingMaskGasMercenary
     - id: JetpackMiniFilled
@@ -445,9 +429,7 @@
   components:
   - type: StorageFill
     contents:
-    - id: DoubleEmergencyOxygenTankFilled # Lonestar
-    - id: DoubleEmergencyNitrogenTankFilled # Lonestar
-    # - id: DoubleEmergencyTankO2N2EqualFilled # Lonestar: Kill
+    - id: DoubleEmergencyTankO2N2EqualFilled
     - id: ClothingOuterHardsuitPrivateSecurity
     - id: ClothingMaskGasSecurity
     - id: JetpackMiniFilled
